@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #ede9d5;
+}
+
+header {
+    display: flex;
+    height: 370px;
+    justify-content: space-between;
+
+}
+
+
+
+.logo-principal {
+    display: flex;
+    height: 370px;
+    padding-left: 30px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+    padding: 30px 100px;
+
+}
+
+.navbar li a {
+    display: flex;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #a81822;
+    border: 1px solid none;
+    border-radius: 10px;
+    background-color: #ffffff46;
+
+
+}
+
+
+footer {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+
+}
+
+
+.redes {
+    border: 1px solid none;
+    background-color: #a81822;
+    height: 350px;
+    width: 73px;
+    position: absolute;
+    left: 174px;
+    padding: 10px;
+    display: flex;
+    grid-column: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+
+}
+
+
+.redes-productos {
+    border: 1px solid none;
+    background-color: #a81822;
+    height: 482px;
+    width: 73px;
+    position: absolute;
+    left: 174px;
+    padding: 10px;
+    display: flex;
+    grid-column: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.facebook a {
+    font-size: 48px;
+    color: black;
+}
+
+.facebook {
+    padding: 6px;
+}
+
+
+.instagram a {
+    font-size: 48px;
+    color: #000000;
+}
+
+.instagram {
+    padding: 6px;
+}
+
+.whatsapp a {
+    font-size: 48px;
+    color: black;
+}
+
+.whatsapp {
+    padding: 6px;
+}
+
+
+.whatsapp a:hover {
+    color: #15b301;
+}
+
+
+.mail a {
+    font-size: 48px;
+    color: black;
+    padding: 15px;
+}
+
+.mail {
+    padding: 6px;
+}
+
+.maps a {
+    font-size: 48px;
+    color: black;
+}
+
+.maps {
+    padding: 6px;
+}
+
+
+.contactos {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 18px;
+}
+
+
+.texto-pie {
+    font-size: 20px;
+    grid-column: 3;
+    height: 350x;
+    width: 300px;
+    justify-self: center;
+    align-self: center;
+
+}
+
+/*index */
+
+.main-index {
+    background-image: url(../assets/img/3.jpg);
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 150px 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.texto-index {
+    grid-row: 1;
+    grid-column: 1/4;
+    display: flex;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.titulo-card {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    border: 1 solid none;
+    height: 100px;
+    background-color: #ffffff6b;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.card-1 {
+    border: 1px solid none;
+    background-color: #0000002a;
+    grid-column: 1;
+    grid-row: 3;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-card1 {
+    border: 1px solid none;
+    color: #ffffff;
+    background-color: #0000002a;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.card-2 {
+    border: 1px solid none;
+    background-color: #0000002a;
+    grid-column: 2;
+    grid-row: 3;
+    height: 400px;
+    width: 300px;
+    color: #ede9d5;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-card2 {
+    border: 1px solid none;
+    color: #ffffff;
+    background-color: #0000002a;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-3 {
+    border: 1px solid none;
+    background-color: #0000002a;
+    grid-column: 3;
+    grid-row: 3;
+    height: 400px;
+    width: 300px;
+    color: #ffffff;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.texto-card3 {
+    border: 1px solid none;
+    color: #ffffff;
+    background-color: #0000002a;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nosotros */
+
+.main-paginas {
+    background-image: url(../assets/img/imagen-2.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nosotros {
+    border: 1px solid #424141;
+    background-color: #42414138;
+    padding: 30px;
+    height: 400px;
+    font: 1.2em sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.nosotros h1 {
+    padding: 40px;
+    text-shadow: #ffffff 0 -2px;
+}
+
+
+
+.somos {
+    display: flex;
+    border: 1px solid #424141;
+    background-color: #42414138;
+    font: 1.2em sans-serif;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    padding: 30px;
+}
+
+.somos h3 {
+    padding: 30px
+}
+
+
+.somos a {
+    text-decoration: none;
+    font: 1.2em sans-serif;
+    color: #000000;
+    padding: 20px;
+    text-shadow: #ffffff 0 1px;
+}
+
+/* productos */
+
+.main-productos {
+    background-image: url(../assets/img/imagen-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    /* grid-template-columns:repeat(5 , 1fr);
+    grid-template-rows: 600px  200px; */
+
+}
+
