@@ -123,7 +123,7 @@ footer {
 
 
 .whatsapp a:hover {
-    color: #15b301;
+    color: #63cb77;
 }
 
 
@@ -435,3 +435,205 @@ footer {
 
 
 }
+
+
+@media(max-width:425px) {
+    header {
+        height:500px;
+        display: grid;
+        grid-template-columns:425px;
+        grid-template-rows:1fr 1fr;
+        }
+        
+            .logo-principal {
+                grid-row: 1;
+                width: 400px;
+                height: 250px;
+                display: flex;
+            }
+        
+            .navbar{
+        grid-row:2;
+        align-items: center;
+            }
+        
+        
+        
+            /* main index */
+            .main-index {
+                width: 425px;
+                height:auto;
+                display: grid;
+                grid-template-rows: 1fr 1fr 500px 500px 500px;
+                grid-template-columns: 320px;
+                justify-content: center;
+            }
+        .titulo-card{
+        
+            visibility: hidden;
+            display: none;
+          
+        }
+            .texto-index {
+                visibility: hidden;
+                display: none;
+              
+            }
+        
+        
+            .card-1 {
+                grid-row: 3;
+                grid-column: 1;
+                height:400px;
+                width: 320px;
+        
+            }
+        
+            .card-2 {
+                grid-row: 4;
+                grid-column: 1;
+                height:400px;
+                width: 320px;
+            }
+        
+            .card-3 {
+                grid-row: 5;
+                grid-column: 1;
+                height:400px;
+                width: 320px;
+            }
+        
+            /* footer index */
+        
+            footer{
+                height: 400px;
+                display: grid;
+                grid-template-columns: 80px 240px;
+                grid-template-rows: 1;
+            }
+        
+            .redes {
+                position: absolute;
+                grid-column: 1;
+                left: 0px;
+                height: 400px;
+            }
+        
+        
+        
+            .texto-pie {
+                visibility: hidden;
+                display: none;
+            }
+        
+            .contactos {
+                grid-column: 2;
+                font-size: 16px;
+                text-align: center;
+                align-items:center ;
+        
+            }
+}
+
+
+    @media(max-width:320px) {
+
+    header {
+    height:500px;
+    display: grid;
+    grid-template-columns:320px;
+    grid-template-rows:1fr 1fr;
+    }
+    
+        .logo-principal {
+            grid-row: 1;
+            width: 310px;
+            height: 200px;
+            align-items: center;
+        
+        }
+    
+        .navbar{
+    grid-row:2;
+    align-items: center;
+        }
+    
+    
+    
+        /* main index */
+        .main-index {
+            width: 320px;
+            height: auto;
+            display: grid;
+            grid-template-rows: 1fr 1fr 500px 500px 500px;
+            grid-template-columns: 320px;
+            background-color:#ede9d5;;
+            
+        }
+    .titulo-card{
+    
+        visibility: hidden;
+        display: none;
+      
+    }
+        .texto-index {
+            visibility: hidden;
+            display: none;
+          
+        }
+    
+    
+        .card-1 {
+            grid-row: 3;
+            grid-column: 1;
+            height:400px;
+            width: 320px;
+    
+        }
+    
+        .card-2 {
+            grid-row: 4;
+            grid-column: 1;
+            height:400px;
+            width: 320px;
+        }
+    
+        .card-3 {
+            grid-row: 5;
+            grid-column: 1;
+            height:400px;
+            width: 320px;
+        }
+    
+        /* footer index */
+    
+        footer{
+            height: 400px;
+            display: grid;
+            grid-template-columns: 80px 240px;
+            grid-template-rows: 1;
+        }
+    
+        .redes {
+            position: absolute;
+            grid-column: 1;
+            left: 0px;
+            height: 400px;
+        }
+    
+    
+    
+        .texto-pie {
+            visibility: hidden;
+            display: none;
+        }
+    
+        .contactos {
+            grid-column: 2;
+            font-size: 16px;
+            text-align: center;
+            align-items:center ;
+    
+        }
+    }
+    
