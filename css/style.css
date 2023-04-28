@@ -326,10 +326,13 @@ footer {
 
 .somos a {
     text-decoration: none;
+    border: 1px solid none;
+    background-color: #42414156;
     font: 1.2em sans-serif;
-    color: #000000;
+    color: #fcfcfc;
+    margin: 10px;
     padding: 20px;
-    text-shadow: #ffffff 0 1px;
+    text-shadow: #000000 0 -2px;
 }
 
 /* productos */
