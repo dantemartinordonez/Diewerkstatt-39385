@@ -185,6 +185,7 @@ footer {
     display: flex;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
     color: #ffffff;
     padding: 20px;
 }
@@ -283,16 +284,16 @@ footer {
 /* nosotros */
 
 .main-paginas {
-    background-image: url(../assets/img/imagen-2.jpg);
+    background-image: url(../assets/img/imagen-4.jpg);
     height: 800px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .nosotros {
-    border: 1px solid #424141;
-    background-color: #42414138;
-    padding: 30px;
+    border: 1px solid none;
+    background-color:#ede9d571;
+    padding: 40px;
     height: 400px;
     font: 1.2em sans-serif;
     display: flex;
@@ -310,7 +311,7 @@ footer {
 
 .somos {
     display: flex;
-    border: 1px solid #424141;
+    border: 1px solid none;
     background-color: #42414138;
     font: 1.2em sans-serif;
     flex-direction: column;
@@ -338,7 +339,7 @@ footer {
 /* productos */
 
 .main-productos {
-    background-image: url(../assets/img/imagen-2.jpg);
+    background-image: url(../assets/img/imagen-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 800px;
@@ -349,7 +350,8 @@ footer {
 /* presupuestos */
 
 .main-presupuestos {
-    background-image: url(../assets/img/imagen-2.jpg);
+    background-image: url(../assets/img/imagen-4.jpg);
+
     background-size: cover;
     background-repeat: no-repeat;
     height: 800px;
@@ -362,12 +364,12 @@ footer {
     grid-column: 1 / 3;
     grid-row: 1;
     font-size: 25px;
-    border: 1px black;
+    border: 1px #ede9d5;
     border-radius: 30px;
     font: 1.5em sans-serif;
     padding: 30px;
     margin: 30px;
-    background-color: #00000028;
+    background-color: #ffffff91;
     display: flex;
     justify-content: center;
 }
@@ -389,14 +391,14 @@ footer {
     grid-column: 1;
     grid-row: 2;
     font-size: 25px;
-    border: 1px black;
+    border: 1px #ede9d5;
     border-radius: 30px;
     height: 200px;
     width: 600px;
     font: 1.5em sans-serif;
     padding: 30px;
     margin: 30px;
-    background-color: #00000028;
+    background-color: #ffffff91;
     display: flex;
     flex-direction: column;
 }
@@ -413,14 +415,14 @@ footer {
     flex-direction: column;
     justify-content: center;
     font-size: 25px;
-    border: 1px black;
+    border: 1px #ede9d5;
     border-radius: 30px;
     height: 200px;
     width: 600px;
     font: 1.5em sans-serif;
     padding: 30px;
     margin: 30px;
-    background-color: #00000028;
+    background-color: #ffffff91;
 
 }
 
@@ -429,7 +431,16 @@ footer {
 }
 
 
+/* contactos */
 
+.main-contactos {
+    background-image: url(../assets/img/imagen-2.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
 
 
 
