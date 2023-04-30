@@ -298,6 +298,7 @@ footer {
     font: 1.2em sans-serif;
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -305,6 +306,7 @@ footer {
 .nosotros h1 {
     padding: 40px;
     text-shadow: #ffffff 0 -2px;
+
 }
 
 
@@ -434,18 +436,145 @@ footer {
 /* contactos */
 
 .main-contactos {
-    background-image: url(../assets/img/imagen-2.jpg);
+    background-image: url(../assets/img/imagen-4.jpg);
     height: 800px;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns:1fr 1fr;
+    justify-items: center;
+}
+
+.datos-contactos {
+    grid-column: 1 / 2;
+    font: 1.2em sans-serif;
+    width: 460px; 
+    height: 700px;
+    margin: 40px;
+    border-radius: 15px;  
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #ffffff91;
 }
 
 
 
+.direccion {
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top:80px;
+    background-color:#fbfbfb;
+
+     
+}
+
+.visitas {
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top:30px ;
+    background-color:#fbfbfb;
+}
+
+.telefono {
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top:30px ;
+    background-color:#fbfbfb;
+}
+
+.mail-2 {
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top:30px ;
+    background-color:#fbfbfb;
+}
+
+.atencion {
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top:30px ;
+    background-color:#fbfbfb;
+}
+
+.contact_form{	
+grid-column: 2 / 3;
+font: 1.2em sans-serif;
+width: 460px; 
+height: 700px;
+margin: 40px;
+border-radius: 15px;  
+padding-top: 30px;
+padding-left: 30px; 
+padding-bottom: 20px;  
+background-color: #ffffff91; 
+}
 
 
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #000000; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 10px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #000000; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #000000; 
+	border-color: #000000; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
 
 
 

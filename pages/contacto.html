@@ -32,26 +32,32 @@
     </header>
 
     <main class="main-contactos">
+
+        
         <section class="datos-contactos">
             <h2>DATOS DE CONTACTO</h2>
-            <div>
+            <div class="direccion">
                 <i class='bx bx-map-pin'></i>
                 <p> Cayetano Silva 463 Cordoba</p>
             </div>
-            <div>
-             <i class='bx bx-calendar'></i><p>Si quieres visitarnos en nuestro taller no olvides llamarnos para concertar una cita y así poder
-                ofrecerte la mejor atención.</p>
+            <div class="visitas">
+                <i class='bx bx-calendar'></i>
+                <p>Si quieres visitarnos en nuestro taller no olvides llamarnos para concertar una cita y así poder
+                    ofrecerte la mejor atención.</p>
             </div>
 
-            <div><i class='bx bxs-phone' ></i>
+            <div class="telefono">
+                <i class='bx bxs-phone'></i>
                 <p>+54 9 351-599-9051</p>
             </div>
 
-            <div><i class='bx bx-envelope' ></i>
+            <div class="mail-2">
+                <i class='bx bx-envelope'></i>
                 <p>dwequipamientos@gmail.com</p>
             </div>
 
-            <div><i class='bx bx-time-five' ></i>
+            <div class="atencion">
+                <i class='bx bx-time-five'></i>
                 <p>
                     Horario de atención telefónica.
                     Lunes a Viernes:
@@ -59,55 +65,108 @@
             </div>
         </section>
 
-    </main>|
 
 
-    <footer>
 
-        <div class="redes">
+        <div class="contact_form">
 
-            <section class="facebook"><a
-                    href="https://www.facebook.com/people/Die-Werkstatt/100054578074083/?paipv=0&eav=AfbvyO3KV7uqEftO_3u2VaKB-jMQun6MrquzBFx7BcjRvL8GM97tFoNcG1TheplE9Go&_rdr"
-                    target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-            </section>
+            <h2>FORMULARIO DE CONTACTO</h2>
+            <br>
+            <form action="submeter-formulario.php" method="post">
+                <p>
+                    <label for="nombre">Nombre
+                        <span class="obligatorio"></span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                        placeholder="Escribe tu nombre">
+                </p>
 
-            <section class="instagram"><a href="https://www.instagram.com/diewerkstatt.cba/" target="_blank">
-                    <i class='bx bxl-instagram-alt'></i></a>
-            </section>
+                <p>
+                    <label for="email">Email
+                        <span class="obligatorio"></span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                        placeholder="Escribe tu Email">
+                </p>
 
-            <section class="whatsapp"><a href="https://api.whatsapp.com/send?phone=5493515999051" target="_blank">
-                    <i class='bx bxl-whatsapp bx-tada'></i></a>
-            </section>
+                <p>
+                    <label for="telefone">Teléfono</label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>
 
-            <section class="mail"><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
-                    <i class='bx bxs-envelope'></i></a>
-            </section>
+                <p>
+                    <label for="asunto">Asunto
+                        <span class="obligatorio"></span>
+                    </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                        placeholder="Escribe un asunto">
+                </p>
 
-            <section class="maps"><a href="https://goo.gl/maps/gZivjy7P3HgTyTC87" target="_blank">
-                    <i class='bx bxs-map'></i></a>
+                <p>
+                    <label for="mensaje">Mensaje
+                        <span class="obligatorio"></span>
+                    </label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="dejanos aqui tu consulta"></textarea>
+                </p>
+
+                <button type="submit" name="enviar_formulario" id="enviar">
+                    <p>Enviar</p>
+                </button>
+            </form>
         </div>
+        
 
 
-        <section class="contactos">
-            <h2>CONTACTOS:</h2>
-            <br>
-            <p>+54 9 351-599-9051</p>
-            <br>
-            <p> dwequipamientos@gmail.com</p>
+</main>
+
+
+<footer>
+
+    <div class="redes">
+
+        <section class="facebook"><a
+                href="https://www.facebook.com/people/Die-Werkstatt/100054578074083/?paipv=0&eav=AfbvyO3KV7uqEftO_3u2VaKB-jMQun6MrquzBFx7BcjRvL8GM97tFoNcG1TheplE9Go&_rdr"
+                target="_blank"><i class='bx bxl-facebook-circle'></i></a>
         </section>
 
-        <div class="texto-pie">
-            <h2>DIE WERKSTATT</h2>
-            <p>En nuestra carpintería estamos en contínua formación para ofrecerle a todos nuestros
-                clientes los diseños mas innovadores y las tendencias más demandadas en el sector de la madera.
+        <section class="instagram"><a href="https://www.instagram.com/diewerkstatt.cba/" target="_blank">
+                <i class='bx bxl-instagram-alt'></i></a>
+        </section>
 
-                Hacemos realidad cualquier propuesta de nuestros clientes. La imaginación no tiene límites.
+        <section class="whatsapp"><a href="https://api.whatsapp.com/send?phone=5493515999051" target="_blank">
+                <i class='bx bxl-whatsapp bx-tada'></i></a>
+        </section>
 
-                Contamos con la experiencia necesaria para diseñar su propuesta y poder ejecutarla en un plazo razonable
-                y a un precio altamente competitivo.</p>
-        </div>
+        <section class="mail"><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                <i class='bx bxs-envelope'></i></a>
+        </section>
 
-    </footer>
+        <section class="maps"><a href="https://goo.gl/maps/gZivjy7P3HgTyTC87" target="_blank">
+                <i class='bx bxs-map'></i></a>
+    </div>
+
+
+    <section class="contactos">
+        <h2>CONTACTOS:</h2>
+        <br>
+        <p>+54 9 351-599-9051</p>
+        <br>
+        <p> dwequipamientos@gmail.com</p>
+    </section>
+
+    <div class="texto-pie">
+        <h2>DIE WERKSTATT</h2>
+        <p>En nuestra carpintería estamos en contínua formación para ofrecerle a todos nuestros
+            clientes los diseños mas innovadores y las tendencias más demandadas en el sector de la madera.
+
+            Hacemos realidad cualquier propuesta de nuestros clientes. La imaginación no tiene límites.
+
+            Contamos con la experiencia necesaria para diseñar su propuesta y poder ejecutarla en un plazo razonable
+            y a un precio altamente competitivo.</p>
+    </div>
+
+</footer>
 </body>
 
 </html>
