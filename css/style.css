@@ -507,7 +507,7 @@ footer {
     background-color:#fbfbfb;
 }
 
-.contact_form{	
+.contactos-form{	
 grid-column: 2 / 3;
 font: 1.2em sans-serif;
 width: 460px; 
@@ -572,6 +572,7 @@ button{
 }
 
 
+
 button p{
 	color: #fff; 
 }
@@ -580,9 +581,11 @@ button p{
 
 
 
-
-
 @media(max-width:1024px) {}
+
+
+
+
 
 
 @media(max-width:768px) {
