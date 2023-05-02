@@ -293,7 +293,7 @@ footer {
 
 .nosotros {
     border: 1px solid none;
-    background-color:#ede9d571;
+    background-color: #ede9d571;
     padding: 40px;
     height: 400px;
     font: 1.2em sans-serif;
@@ -349,7 +349,11 @@ footer {
 }
 
 
-.card-body {text-align: center;}
+.card-body {
+    text-align: center;}
+
+
+
 
 
 /* presupuestos */
@@ -408,7 +412,7 @@ footer {
     flex-direction: column;
 }
 
-.bx{
+.bx {
     font-size: 40px;
 }
 
@@ -431,7 +435,8 @@ footer {
 
 }
 
-.redes-sociales{font-size: 48px;
+.redes-sociales {
+    font-size: 48px;
 
 }
 
@@ -444,17 +449,17 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
 }
 
 .datos-contactos {
     grid-column: 1 / 2;
     font: 1.2em sans-serif;
-    width: 460px; 
+    width: 460px;
     height: 700px;
     margin: 40px;
-    border-radius: 15px;  
+    border-radius: 15px;
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -468,8 +473,8 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
-    margin-top:80px;
-    background-color:#fbfbfb;
+    margin-top: 80px;
+    background-color: #fbfbfb;
 
 
 }
@@ -479,8 +484,8 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
-    margin-top:30px ;
-    background-color:#fbfbfb;
+    margin-top: 30px;
+    background-color: #fbfbfb;
 }
 
 .telefono {
@@ -488,8 +493,8 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
-    margin-top:30px ;
-    background-color:#fbfbfb;
+    margin-top: 30px;
+    background-color: #fbfbfb;
 }
 
 .mail-2 {
@@ -497,8 +502,8 @@ footer {
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
-    margin-top:30px ;
-    background-color:#fbfbfb;
+    margin-top: 30px;
+    background-color: #fbfbfb;
 }
 
 .atencion {
@@ -506,78 +511,78 @@ footer {
     border: 1px solid black;
     border-radius: 15px;
     padding: 5px;
-    margin-top:30px ;
-    background-color:#fbfbfb;
+    margin-top: 30px;
+    background-color: #fbfbfb;
 }
 
-.contactos-form{	
-grid-column: 2 / 3;
-font: 1.2em sans-serif;
-width: 460px; 
-height: 700px;
-margin: 40px;
-border-radius: 15px;  
-padding-top: 30px;
-padding-left: 30px; 
-padding-bottom: 20px;  
-background-color: #ffffff91; 
-}
-
-
-input{
-	background-color: #fbfbfb; 
-	width: 408px; 
-	height: 40px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #000000; 
-	margin-top: 10px;  
-	padding-left: 10px;
-  margin-bottom: 10px; 
+.contactos-form {
+    grid-column: 2 / 3;
+    font: 1.2em sans-serif;
+    width: 460px;
+    height: 700px;
+    margin: 40px;
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background-color: #ffffff91;
 }
 
 
-textarea{
-  background-color: #fbfbfb; 
-	width: 405px; 
-	height: 150px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #000000; 
-	margin-top: 10px;  
-	padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 
-label{
-  display: block; 
-	float: center; 	
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
 }
 
 
-button{
-	height: 45px; 
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	text-transform: uppercase;
-	background-color: #000000; 
-	border-color: #000000; 
-	border-style: solid; 
-	border-radius: 10px;	
-	width: 420px;   
-  cursor: pointer;
+label {
+    display: block;
+    float: center;
+}
+
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #000000;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
 }
 
 
 
-button p{
-	color: #fff; 
+button p {
+    color: #fff;
 }
 
 
@@ -607,7 +612,7 @@ button p{
 
     .main-index {
         height: 1000px;
-        width:auto;
+        width: auto;
         display: grid;
         grid-template-rows: 1fr 1fr 600px;
         grid-template-columns: repeat(3, auto);
@@ -664,7 +669,7 @@ button p{
     .texto-pie {
         grid-column: 3 / 4;
         display: flex;
-        font-size:16px;
+        font-size: 16px;
         padding-top: 50px;
         width: 450px;
         height: 400px;
