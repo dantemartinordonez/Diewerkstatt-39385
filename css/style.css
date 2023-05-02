@@ -13,7 +13,6 @@ header {
     display: flex;
     height: 370px;
     justify-content: space-between;
-
 }
 
 
@@ -30,7 +29,7 @@ header {
     gap: 30px;
     list-style: none;
     padding: 30px 100px;
-
+    align-items: center;
 }
 
 .navbar li a {
@@ -45,16 +44,12 @@ header {
     border: 1px solid none;
     border-radius: 10px;
     background-color: #ffffff46;
-
-
 }
 
 
 footer {
-    height: 300px;
     display: grid;
     grid-template-columns: 300px 1fr 1fr;
-
 }
 
 
@@ -72,7 +67,6 @@ footer {
     align-items: center;
     justify-items: center;
     flex-wrap: nowrap;
-
 }
 
 
@@ -90,7 +84,6 @@ footer {
     align-items: center;
     justify-items: center;
     flex-wrap: nowrap;
-
 }
 
 .facebook a {
@@ -165,7 +158,6 @@ footer {
     padding-top: 50px;
     justify-self: center;
     align-self: center;
-
 }
 
 /*index */
@@ -202,7 +194,6 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 
@@ -229,8 +220,6 @@ footer {
     border-radius: 10px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-
-
 }
 
 .card-2 {
@@ -307,7 +296,6 @@ footer {
 .nosotros h1 {
     padding: 40px;
     text-shadow: #ffffff 0 -2px;
-
 }
 
 
@@ -350,7 +338,10 @@ footer {
 
 
 .card-body {
-    text-align: center;}
+    text-align: center;
+    align-items: center;
+
+}
 
 
 
@@ -392,7 +383,6 @@ footer {
 
 .imagen-presupuesto {
     padding: 50px;
-
 }
 
 
@@ -432,12 +422,10 @@ footer {
     padding: 30px;
     margin: 30px;
     background-color: #ffffff91;
-
 }
 
 .redes-sociales {
     font-size: 48px;
-
 }
 
 
@@ -570,7 +558,6 @@ button {
     padding-right: 5px;
     margin-bottom: 20px;
     margin-top: 10px;
-    text-transform: uppercase;
     background-color: #000000;
     border-color: #000000;
     border-style: solid;
@@ -700,7 +687,6 @@ button p {
 
     .navbar li a {
         font-size: 18px;
-
     }
 
 
@@ -730,7 +716,6 @@ button p {
         grid-column: 2/3;
         width: 200px;
         height: 400px;
-
     }
 
     .card-3 {
@@ -740,7 +725,12 @@ button p {
     }
 
 
+       /* main productos */
+       .main-productos {
+        width: 768px;
+        }
 
+/* footer index */
 
     footer {
         grid-template-columns: 50px 300px 1fr;
@@ -765,14 +755,6 @@ button p {
     .texto-pie {
         visibility: hidden;
         display: none;
-        /* grid-column: 3 / 4;
-        display: flex;
-        font-size:16px;
-        padding: 10px;
-        width: 200px;
-        height: 400px;
-        flex-direction: column;
-        justify-content: flex-start; */
     }
 
 }
@@ -780,7 +762,7 @@ button p {
 
 @media(max-width:425px) {
     header {
-        height: 500px;
+        height: 530px;
         display: grid;
         grid-template-columns: 425px;
         grid-template-rows: 1fr 1fr;
@@ -788,8 +770,8 @@ button p {
 
     .logo-principal {
         grid-row: 1;
-        width: 400px;
-        height: 250px;
+        width: 380px;
+        height: 240px;
         display: flex;
     }
 
@@ -820,7 +802,6 @@ button p {
     .texto-index {
         visibility: hidden;
         display: none;
-
     }
 
 
@@ -829,7 +810,6 @@ button p {
         grid-column: 1;
         height: 400px;
         width: 320px;
-
     }
 
     .card-2 {
@@ -845,6 +825,11 @@ button p {
         height: 400px;
         width: 320px;
     }
+
+    /* main productos */
+    .main-productos {
+        width: 425px;
+        }
 
     /* footer index */
 
@@ -890,15 +875,15 @@ button p {
 
     .logo-principal {
         grid-row: 1;
-        width: 310px;
+        width: 300px;
         height: 200px;
-        align-items: center;
+        padding-left: 10px;
+    
 
     }
 
     .navbar {
         grid-row: 2;
-        align-items: center;
     }
 
 
@@ -911,21 +896,17 @@ button p {
         grid-template-rows: 1fr 1fr 500px 500px 500px;
         grid-template-columns: 320px;
         background-color: #ede9d5;
-        ;
-
     }
 
     .titulo-card {
 
         visibility: hidden;
         display: none;
-
     }
 
     .texto-index {
         visibility: hidden;
         display: none;
-
     }
 
 
@@ -934,7 +915,6 @@ button p {
         grid-column: 1;
         height: 400px;
         width: 320px;
-
     }
 
     .card-2 {
@@ -950,6 +930,11 @@ button p {
         height: 400px;
         width: 320px;
     }
+
+    /* main productos */
+    .main-productos {
+        width: 320px;
+        }
 
     /* footer index */
 
@@ -979,6 +964,5 @@ button p {
         font-size: 16px;
         text-align: center;
         align-items: center;
-
     }
 }
