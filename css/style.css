@@ -61,7 +61,7 @@ footer {
 .redes {
     border: 1px solid none;
     background-color: #a81822;
-    height: 350px;
+    height: 430px;
     width: 73px;
     position: absolute;
     left: 174px;
@@ -160,8 +160,9 @@ footer {
 .texto-pie {
     font-size: 20px;
     grid-column: 3;
-    height: 350x;
-    width: 300px;
+    height: 400px;
+    width: 500px;
+    padding-top: 50px;
     justify-self: center;
     align-self: center;
 
@@ -344,9 +345,11 @@ footer {
     background-image: url(../assets/img/imagen-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+
 }
 
+
+.card-body {text-align: center;}
 
 
 /* presupuestos */
@@ -468,7 +471,7 @@ footer {
     margin-top:80px;
     background-color:#fbfbfb;
 
-     
+
 }
 
 .visitas {
@@ -581,7 +584,94 @@ button p{
 
 
 
-@media(max-width:1024px) {}
+@media(max-width:1024px) {
+    header {
+        height: 300px;
+    }
+
+    .logo-principal {
+        height: 300px;
+        padding: 0px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar li a {
+        font-size: 18px;
+
+    }
+
+
+
+    .main-index {
+        height: 1000px;
+        width:auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr 600px;
+        grid-template-columns: repeat(3, auto);
+        background-size: cover;
+    }
+
+    .texto-index {
+        grid-row: 1;
+        grid-column: 1/4;
+        text-align: center;
+    }
+
+    .card-1 {
+        grid-column: 1/2;
+        width: 200px;
+        height: 400px;
+    }
+
+    .card-2 {
+        grid-column: 2/3;
+        width: 200px;
+        height: 400px;
+
+    }
+
+    .card-3 {
+        grid-column: 3;
+        width: 200px;
+        height: 400px;
+    }
+
+
+
+
+    footer {
+        grid-template-columns: 50px 300px 1fr;
+    }
+
+
+    .redes {
+        position: absolute;
+        left: 0px;
+        height: 430px;
+    }
+
+
+    .contactos {
+        grid-column: 2 / 3;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+
+    .texto-pie {
+        grid-column: 3 / 4;
+        display: flex;
+        font-size:16px;
+        padding-top: 50px;
+        width: 450px;
+        height: 400px;
+        flex-direction: column;
+    }
+
+}
 
 
 
@@ -622,24 +712,25 @@ button p{
     .texto-index {
         grid-row: 1;
         grid-column: 1/4;
+        text-align: center;
     }
 
     .card-1 {
         grid-column: 1/2;
-        width: 250px;
+        width: 200px;
         height: 400px;
     }
 
     .card-2 {
         grid-column: 2/3;
-        width: 250px;
+        width: 200px;
         height: 400px;
 
     }
 
     .card-3 {
         grid-column: 3;
-        width: 250px;
+        width: 200px;
         height: 400px;
     }
 
@@ -655,7 +746,7 @@ button p{
     .redes {
         position: absolute;
         left: 0px;
-        height: 400px;
+        height: 430px;
     }
 
 
@@ -667,13 +758,16 @@ button p{
 
 
     .texto-pie {
-        grid-column: 3 / 4;
+        visibility: hidden;
+        display: none;
+        /* grid-column: 3 / 4;
         display: flex;
+        font-size:16px;
         padding: 10px;
-        width: 280px;
+        width: 200px;
         height: 400px;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: flex-start; */
     }
 
 }
@@ -707,7 +801,7 @@ button p{
         height: auto;
         display: grid;
         grid-template-rows: 1fr 1fr 500px 500px 500px;
-        grid-template-columns: 320px;
+        grid-template-columns: 318px;
         justify-content: center;
     }
 
@@ -760,7 +854,7 @@ button p{
         position: absolute;
         grid-column: 1;
         left: 0px;
-        height: 400px;
+        height: 430px;
     }
 
 
@@ -865,7 +959,7 @@ button p{
         position: absolute;
         grid-column: 1;
         left: 0px;
-        height: 400px;
+        height: 430px;
     }
 
 
