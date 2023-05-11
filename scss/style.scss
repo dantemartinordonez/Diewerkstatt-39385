@@ -1,4 +1,12 @@
+@import"./utilities/variables";
 @import"./base/reset";
 @import"./layout/body";
 @import"./layout/header";
 @import"./layout/footer";
+@import"./layout/main-index";
+@import"./layout/main-productos";
+@import"./layout/@media/@media1024px";
+@import"./layout/@media/@media768px";
+@import"./layout/@media/@media425px";
+@import"./layout/@media/@media375px";
+@import"./layout/@media/@media320px";

@@ -1,3 +1,4 @@
+/**variables**/
 * {
   margin: 0;
   padding: 0;
@@ -33,11 +34,11 @@ header {
           font-size: 25px;
           color: black;
           text-decoration: none; }
-        header nav ul li a:hover {
-          color: #a81822;
-          border: 1px solid none;
-          border-radius: 10px;
-          background-color: #ffffff46; }
+          header nav ul li a:hover {
+            color: #a81822;
+            border: 1px solid none;
+            border-radius: 10px;
+            background-color: #ffffff46; }
 
 footer {
   display: grid;
@@ -80,3 +81,158 @@ footer {
     padding-top: 50px;
     justify-self: center;
     align-self: center; }
+    footer .texto-pie p {
+      font-size: 18px; }
+
+main {
+  background-image: url(../assets/img/3.jpg);
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 150px 450px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  main section {
+    grid-row: 1;
+    grid-column: 1/4;
+    display: flex; }
+    main section p {
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      color: #ffffff;
+      padding: 20px; }
+  main .titulo-card {
+    grid-row: 2;
+    grid-column: 1 / 4;
+    border: 1 solid none;
+    height: 100px;
+    background-color: #ffffff6b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  main .card-1, main .card-2, main .card-3 {
+    border: 1px solid none;
+    background-color: #0000002a;
+    grid-column: 1;
+    grid-row: 3;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    main .card-1 .texto-card1, main .card-2 .texto-card1, main .card-3 .texto-card1, main .card-2 .texto-card2, main .card-3 .texto-card3 {
+      border: 1px solid none;
+      background-color: #0000002a;
+      border-radius: 10px;
+      color: #ffffff;
+      text-align: center; }
+      main .card-1 .texto-card1 p, main .card-2 .texto-card1 p, main .card-3 .texto-card1 p, main .card-2 .texto-card2 p, main .card-3 .texto-card3 p {
+        font-family: Arial, Helvetica, sans-serif; }
+  main .card-2 {
+    grid-column: 2;
+    grid-row: 3; }
+  main .card-3 {
+    grid-column: 3;
+    grid-row: 3; }
+
+@media (max-width: 1024px) {
+  header {
+    height: 300px; }
+    header section .logo-principal {
+      height: 300px;
+      padding: 0px; }
+    header nav .navbar {
+      padding: 15px; }
+      header nav .navbar li a {
+        font-size: 18px; }
+  .main-index {
+    height: 1000px;
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 600px;
+    grid-template-columns: repeat(3, auto);
+    background-size: cover; }
+    .main-index .texto-index {
+      grid-row: 1;
+      grid-column: 1/4;
+      text-align: center; }
+    .main-index .card-1, .main-index main .card-2, main .main-index .card-2, .main-index main .card-3, main .main-index .card-3 {
+      grid-column: 1/2;
+      width: 200px;
+      height: 400px; }
+    .main-index .card-2 {
+      grid-column: 2/3;
+      width: 200px;
+      height: 400px; }
+    .main-index .card-3 {
+      grid-column: 3;
+      width: 200px;
+      height: 400px; }
+  footer {
+    grid-template-columns: 50px 300px 1fr; }
+    footer .redes {
+      position: absolute;
+      left: 0px;
+      height: 430px; }
+    footer .contactos {
+      grid-column: 2 / 3;
+      align-items: center;
+      padding-bottom: 15px; }
+    footer .texto-pie {
+      grid-column: 3 / 4;
+      display: flex;
+      font-size: 16px;
+      padding-top: 50px;
+      width: 450px;
+      height: 400px;
+      flex-direction: column; }
+  .contactos {
+    grid-column: 2 / 3;
+    align-items: center;
+    padding-bottom: 15px; }
+  .texto-pie {
+    grid-column: 3 / 4;
+    display: flex;
+    font-size: 16px;
+    padding-top: 50px;
+    width: 450px;
+    height: 400px;
+    flex-direction: column; } }
+
+@media (max-width: 768px) {
+  header {
+    height: 300px; }
+    header section .logo-principal {
+      height: 300px;
+      padding: 0px; }
+    header nav .navbar {
+      padding: 15px; }
+      header nav .navbar li a {
+        font-size: 18px; }
+  .main-index {
+    height: 1000px;
+    width: 768px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 600px;
+    grid-template-columns: repeat(3, 256px);
+    background-size: cover; }
+    .main-index .texto-index {
+      grid-row: 1;
+      grid-column: 1/4;
+      text-align: center; }
+    .main-index .card-1, .main-index main .card-2, main .main-index .card-2, .main-index main .card-3, main .main-index .card-3 {
+      grid-column: 1/2;
+      width: 200px;
+      height: 400px; }
+    .main-index .card-2 {
+      grid-column: 2/3;
+      width: 200px;
+      height: 400px; }
+    .main-index .card-3 {
+      grid-column: 3;
+      width: 200px;
+      height: 400px; } }

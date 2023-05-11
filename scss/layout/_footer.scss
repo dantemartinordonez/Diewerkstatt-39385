@@ -1,6 +1,6 @@
-    footer {
-            display: grid;
-            grid-template-columns: 300px 1fr 1fr;
+footer {
+        display: grid;
+        grid-template-columns: 300px 1fr 1fr;
             div {
                 border: 1px solid none;
                 background-color: #a81822;
@@ -23,21 +23,24 @@
                             padding: 15px;
                         }
             }
-                        .whatsapp a:hover {
-                            color: #63cb77;
+                        .whatsapp{
+                                a:hover{ 
+                                    color: #63cb77;
+                                }
                         }
         
         }
 
     .contactos {
-        grid-column: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
-        p{font-size: 18px;
-        }
-    }
+                grid-column: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                    p{
+                        font-size: 18px;
+                    }
+                }
 
     .texto-pie {
         font-size: 20px;
@@ -47,5 +50,8 @@
         padding-top: 50px;
         justify-self: center;
         align-self: center;
+        p{
+        font-size: 18px;
+        }
     }
 }
