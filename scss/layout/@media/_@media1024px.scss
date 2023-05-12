@@ -46,38 +46,21 @@
             height: 400px;
         }
     }
-
     footer{
-        grid-template-columns: 50px 300px 1fr;
+            grid-template-columns: 50px 300px 1fr;
         .redes{
             position: absolute;
             left: 0px;
             height: 430px;
         }
         .contactos {
-            grid-column: 2 / 3;
-            align-items: center;
-            padding-bottom: 15px;
-        }
-        .texto-pie
-        {
-            grid-column: 3 / 4;
-            display: flex;
-            font-size: 16px;
-            padding-top: 50px;
-            width: 450px;
-            height: 400px;
-            flex-direction: column;
-        }
-    }
-    .contactos {
         grid-column: 2 / 3;
         align-items: center;
-        padding-bottom: 15px;
-    }
-    
-    
-    .texto-pie {
+            h2{
+                padding-bottom: 15px;
+            }
+        }
+        .texto-pie {
         grid-column: 3 / 4;
         display: flex;
         font-size: 16px;
@@ -85,5 +68,9 @@
         width: 450px;
         height: 400px;
         flex-direction: column;
+            p{
+            font-size: 16px;    
+            }
+        }
     }
 }
