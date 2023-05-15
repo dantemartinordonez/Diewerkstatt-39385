@@ -180,6 +180,47 @@ main .main-paginas {
       padding: 20px;
       text-shadow: #000000 0 -2px; }
 
+.main-productos {
+  background-image: url(../assets/img/imagen-4.jpg);
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto, 1fr; }
+  .main-productos section {
+    border: 1px solid black;
+    width: 300px; }
+    .main-productos section img {
+      padding: 10px;
+      height: 200px; }
+    .main-productos section div {
+      border: 1px solid none;
+      background-color: #ffffff6b; }
+      .main-productos section div h5 {
+        padding: 10px;
+        font-size: 20px; }
+      .main-productos section div p {
+        text-align: center;
+        width: 300px; }
+      .main-productos section div a {
+        border: 1px solid black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+        padding-top: 15px; }
+  .main-productos .texto-productos {
+    margin: 10px;
+    grid-column: 1/5;
+    background-color: #ffffff6b; }
+    .main-productos .texto-productos p {
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      color: #000000;
+      padding: 20px; }
+
 @media (max-width: 1024px) {
   header {
     height: 300px; }
