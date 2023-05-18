@@ -5,41 +5,53 @@
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows:auto, 1fr;
+    grid-template-rows:repeat(auto,1fr);
     section{
-        border: 1px solid black;
+        border: 1px solid #00000052;
         width: 300px;
+        text-align: center;
+        justify-self: center;
+        align-items: center;
         
-            img{
-                padding:10px;
-                height: 200px;
+        img{
+            padding:10px;
+            height: 200px;
+            transition: transform .2s;
+                &:hover{
+                transform: scale(1.5);
+                }
             }
         div{
-            border:1px solid none;
-            background-color: #ffffff6b;
-            h5{
+            border: 1px black none;
+            border-radius:15px;
+            background-color:#ede9d5;
+                h5{
                 padding: 10px;
                 font-size:20px;
-            }
-            p{
-                text-align: center;
-                width:300px;
-            }
-            a{
-                border:1px solid black;
-                font-family:$arial;
-                font-size: 18px;
-                color: black;
-                text-decoration: none;
-                padding-top: 15px;
-
+                }
+                p{
+                    font-family: 16px;
+                }
+                button{
+                    border-radius: 7px;
+                    margin: 15px;
+                    padding: 10px;
+                        a{
+                            font-size:18px;
+                            color: black;
+                            text-decoration: none;
+                            &:hover{
+                                color: #a81822;
+                            }    
+                        }    
+                }           
             }
         }
-    }
     .texto-productos{
-        margin: 10px;
         grid-column: 1/5;
         background-color: #ffffff6b;
+        grid-row:2;
+        margin: 15px;
         p{
             font-size: 20px;
             font-family:$arial;

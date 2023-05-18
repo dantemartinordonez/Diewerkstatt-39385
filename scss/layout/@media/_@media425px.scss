@@ -1,8 +1,8 @@
 @media(max-width:425px){
     header{
-        height:530px;
+        height:auto;
         display: grid;
-        grid-template-columns: 425px;
+        grid-template-columns: auto;
         grid-template-rows: 250px 1fr;
         section{
             .logo-principal{
