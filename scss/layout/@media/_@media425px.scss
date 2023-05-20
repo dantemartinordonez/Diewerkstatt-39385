@@ -21,7 +21,7 @@
 
 .main-index{
     height:auto;
-    width: 420px;
+    width:auto;
     display: grid;
     grid-template-rows: 1fr 1fr 500px 500px 500px;
     grid-template-columns:320px;
@@ -54,4 +54,31 @@
         width: 320px;
     }
 }
+
+.main-paginas{
+    height: 425px;
+    width: auto;
+}
+footer{
+            grid-template-columns: 100px 1fr;
+        .redes{
+            grid-column:1;
+            position: absolute;
+            left: 0px;
+
+        }
+        .contactos {
+            grid-column: 2;
+            text-align: center;
+            align-items: center;
+            padding-bottom: 50px;
+    
+            p{
+                font-size: 18px;
+            }
+        }
+        .texto-pie {
+            display: none;
+        }
+    }
 }

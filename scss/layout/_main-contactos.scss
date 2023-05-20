@@ -1,0 +1,108 @@
+.main-contactos{
+    background-image: url(../assets/img/imagen-4.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+        .datos-contactos{
+        grid-column: 1 / 2;
+        font: 1.2em sans-serif;
+        width: 460px;
+        height: 700px;
+        margin: 40px;
+        border-radius: 15px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #ffffff91;
+        h2{
+            text-align: center;
+        }
+        .direccion{
+            font: 1.2em sans-serif;
+            font-size: 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 80px;
+            background-color: #fbfbfb;
+            i{
+            font-size: 40px;
+                    transition: transform .1s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        .visitas{
+            @extend.direccion;
+            margin-top: 30px;
+        }
+        .telefono{
+            @extend.visitas;
+        }
+        .mail-2{
+            @extend.visitas;
+        }
+        .atencion{
+            @extend.visitas;
+        }
+    }
+        .contactos-form{
+            grid-column: 2 / 3;
+            font: 1.2em sans-serif;
+            width: 460px;
+            height: 700px;
+            margin: 40px;
+            border-radius: 15px;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            background-color: #ffffff91;
+        p{
+            // label{
+            // display: block;
+            // float: center;
+            // }
+            input {
+                background-color: #fbfbfb;
+                width: 408px;
+                height: 40px;
+                border: 1px solid black;
+                border-radius: 5px;
+                margin-top: 10px;
+                padding-left: 10px;
+                margin-bottom: 10px;
+            }
+            textarea {
+            @extend input;
+                height: 150px;
+                margin-top: 10px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+                padding-top: 15px;
+            }  
+        }
+        button {
+            height: 45px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            background-color: #000000;
+            border: solid black;
+            border-radius: 10px;
+            width: 420px;
+            cursor: pointer;
+            p{
+            color: #fff;
+            }
+        }
+    }
+}
+
+    
