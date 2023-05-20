@@ -22,30 +22,32 @@
         height: auto;
         width: 768px;
     }
-    .main-paginas{
-        width: 768px;
+    main{
+        .main-paginas{
+            width: 768px;
+        }
     }
-    footer{
+    footer{height:315px;
             grid-template-columns: 100px 1fr;
         .redes{
             grid-column:1;
             position: absolute;
             left: 0px;
-            height: 400px;
+            height:auto;
+            a{
+                font-size: 40px;
+            }
         }
         .contactos {
             grid-column: 2;
-            height: 400px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            padding-bottom: 15px;
-            p{
-                font-size: 18px;
-            }
+            justify-content: flex-end;
+            margin-bottom: 20px;
+
         }
         .texto-pie {
-            visibility: hidden;
             display: none;
         }
     }

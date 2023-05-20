@@ -1,0 +1,31 @@
+@media(max-width:320px){
+    header{
+        grid-template-rows: 190px 1fr;
+        section{
+            .logo-principal{
+                width: 300px;
+                height: 180px;
+            }
+        }
+    }
+    .main-index{
+        width:auto;
+        grid-template-columns:320px;
+    }
+    main{
+        .main-paginas{
+                .somos {
+                    padding:30px;
+                    height:auto;
+                    h3{
+                        font-size:18px;
+                        color: rgb(0, 0, 0);
+                    }
+                    a{
+                    margin:15px;
+                    padding: 10px;
+                    }
+                }
+        }
+    }
+}

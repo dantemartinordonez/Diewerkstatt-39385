@@ -439,48 +439,50 @@ main .main-paginas {
   .main-index {
     height: auto;
     width: 768px; }
-  .main-paginas {
+  main .main-paginas {
     width: 768px; }
   footer {
+    height: 315px;
     grid-template-columns: 100px 1fr; }
     footer .redes {
       grid-column: 1;
       position: absolute;
       left: 0px;
-      height: 400px; }
+      height: auto; }
+      footer .redes a {
+        font-size: 40px; }
     footer .contactos {
       grid-column: 2;
-      height: 400px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-bottom: 15px; }
-      footer .contactos p {
-        font-size: 18px; }
+      justify-content: flex-end;
+      margin-bottom: 20px; }
     footer .texto-pie {
-      visibility: hidden;
       display: none; } }
 
 @media (max-width: 425px) {
   header {
     height: auto;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-rows: 250px 1fr; }
-    header section .logo-principal {
+    header section {
       grid-row: 1;
-      width: 380px;
-      height: 240px; }
+      padding-left: 5px; }
+      header section .logo-principal {
+        width: 370px;
+        height: 240px; }
     header nav {
       grid-row: 2; }
       header nav .navbar {
         align-items: center; }
   .main-index {
     height: auto;
-    width: auto;
+    width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 500px 500px 500px;
-    grid-template-columns: 320px;
+    grid-template-columns: 420px;
     justify-content: center; }
     .main-index .titulo-card {
       visibility: hidden;
@@ -504,65 +506,53 @@ main .main-paginas {
       grid-column: 1;
       height: 400px;
       width: 320px; }
-  .main-paginas {
-    height: 425px;
+  main .main-paginas {
     width: auto; }
+    main .main-paginas .nosotros {
+      width: auto;
+      padding: 10px;
+      height: 500px; }
+    main .main-paginas .somos {
+      text-align: center; }
   footer {
     grid-template-columns: 100px 1fr; }
     footer .redes {
       grid-column: 1;
       position: absolute;
       left: 0px; }
-    footer .contactos {
-      grid-column: 2;
-      text-align: center;
-      align-items: center;
-      padding-bottom: 50px; }
-      footer .contactos p {
-        font-size: 18px; }
+    footer .contactos p {
+      font-size: 16px; }
     footer .texto-pie {
       display: none; } }
 
 @media (max-width: 375px) {
-  header {
-    height: auto;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 250px 1fr; }
-    header section .logo-principal {
-      grid-row: 1;
-      width: 380px;
-      height: 240px; }
-    header nav {
-      grid-row: 2; }
-      header nav .navbar {
-        align-items: center; }
+  header section .logo-principal {
+    width: 310px;
+    height: 190px; }
+  header nav {
+    padding: 5px; }
   .main-index {
-    height: auto;
-    width: 420px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 500px 500px 500px;
-    grid-template-columns: 320px;
-    justify-content: center; }
-    .main-index .titulo-card {
-      visibility: hidden;
-      display: none; }
-    .main-index .texto-index {
-      visibility: hidden;
-      display: none; }
-    .main-index .card-1, .main-index .card-2, .main-index .card-3 {
-      grid-row: 3;
-      grid-column: 1;
-      height: 400px;
-      width: 320px;
-      margin-top: 25px; }
-    .main-index .card-2 {
-      grid-row: 4;
-      grid-column: 1;
-      height: 400px;
-      width: 320px; }
-    .main-index .card-3 {
-      grid-row: 5;
-      grid-column: 1;
-      height: 400px;
-      width: 320px; } }
+    grid-template-columns: 320px; }
+  main .main-paginas .nosotros {
+    display: none; }
+  main .main-paginas .somos {
+    height: auto; } }
+
+@media (max-width: 320px) {
+  header {
+    grid-template-rows: 190px 1fr; }
+    header section .logo-principal {
+      width: 300px;
+      height: 180px; }
+  .main-index {
+    width: auto;
+    grid-template-columns: 320px; }
+  main .main-paginas .somos {
+    padding: 30px;
+    height: auto; }
+    main .main-paginas .somos h3 {
+      font-size: 18px;
+      color: black; }
+    main .main-paginas .somos a {
+      margin: 15px;
+      padding: 10px; } }
