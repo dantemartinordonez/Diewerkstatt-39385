@@ -1,5 +1,6 @@
-@media(max-width:1024px){
+@media(max-width:1220px){
     header{
+        width:auto;
         height: 300px;
         section{
             .logo-principal{
@@ -21,13 +22,9 @@
     .main-index{
         height: auto;
         width: auto;
-        display: grid;
         grid-template-rows: 1fr 1fr 600px;
         grid-template-columns: repeat(3, auto);
-        background-size: cover;
         .texto-index{        
-            grid-row: 1;
-            grid-column: 1/4;
             text-align: center;
         }
         .card-1{
@@ -46,6 +43,31 @@
             height: 400px;
         }
     }
+    .main-productos{
+        width:auto;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(auto,auto,1fr);
+        section{
+            margin:15px;
+            div{
+                border-radius:10px;
+                    h5{
+                    padding: 8px;
+                    font-size:18px;
+                    }
+                    p{
+                        font-family: 16px;
+                    }
+                    button{
+                        margin: 10px;
+                    }           
+                }
+            }
+        .texto-productos{
+            grid-column: 1/3;
+            grid-row:3;
+        }
+    }
     footer{
             grid-template-columns: 50px 300px 1fr;
         .redes{
@@ -54,22 +76,22 @@
             height: 430px;
         }
         .contactos {
-        grid-column: 2 / 3;
-        align-items: center;
+            grid-column: 2 / 3;
+            align-items: center;
             h2{
                 padding-bottom: 15px;
             }
         }
         .texto-pie {
-        grid-column: 3 / 4;
-        display: flex;
-        font-size: 16px;
-        padding-top: 50px;
-        width: 450px;
-        height: 400px;
-        flex-direction: column;
+            grid-column: 3 / 4;
+            display: flex;
+            font-size: 16px;
+            padding-top: 50px;
+            width: 450px;
+            height: 400px;
+            flex-direction: column;
             p{
-            font-size: 16px;    
+                font-size: 16px;    
             }
         }
     }

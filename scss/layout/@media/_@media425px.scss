@@ -68,8 +68,30 @@ main{
         }    
     }
 }
-
-
+.main-productos{
+    width:auto;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(auto auto auto auto);
+    section{
+        margin:15px;
+        div{
+            border-radius:10px;
+                h5{
+                padding: 8px;
+                font-size:20px;
+                }
+                p{
+                display: none;
+                }
+                button{
+                    margin: 10px;
+                }           
+            }
+        }
+    .texto-productos{
+     display: none;
+    }
+}
 footer{
             grid-template-columns: 100px 1fr;
         .redes{

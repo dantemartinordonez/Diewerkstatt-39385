@@ -183,6 +183,7 @@ main .main-paginas {
 .main-productos {
   background-image: url(../assets/img/imagen-4.jpg);
   height: auto;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
@@ -199,7 +200,7 @@ main .main-paginas {
       height: 200px;
       transition: transform .2s; }
       .main-productos section img:hover {
-        transform: scale(1.5); }
+        transform: scale(1.2); }
     .main-productos section div {
       border: 1px black none;
       border-radius: 15px;
@@ -371,8 +372,9 @@ main .main-paginas {
       .main-contactos .contactos-form button p {
         color: #fff; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1220px) {
   header {
+    width: auto;
     height: 300px; }
     header section .logo-principal {
       height: 300px;
@@ -384,13 +386,9 @@ main .main-paginas {
   .main-index {
     height: auto;
     width: auto;
-    display: grid;
     grid-template-rows: 1fr 1fr 600px;
-    grid-template-columns: repeat(3, auto);
-    background-size: cover; }
+    grid-template-columns: repeat(3, auto); }
     .main-index .texto-index {
-      grid-row: 1;
-      grid-column: 1/4;
       text-align: center; }
     .main-index .card-1, .main-index .card-2, .main-index .card-3 {
       grid-column: 1/2;
@@ -404,6 +402,24 @@ main .main-paginas {
       grid-column: 3;
       width: 200px;
       height: 400px; }
+  .main-productos {
+    width: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, auto, 1fr); }
+    .main-productos section {
+      margin: 15px; }
+      .main-productos section div {
+        border-radius: 10px; }
+        .main-productos section div h5 {
+          padding: 8px;
+          font-size: 18px; }
+        .main-productos section div p {
+          font-family: 16px; }
+        .main-productos section div button {
+          margin: 10px; }
+    .main-productos .texto-productos {
+      grid-column: 1/3;
+      grid-row: 3; }
   footer {
     grid-template-columns: 50px 300px 1fr; }
     footer .redes {
@@ -441,6 +457,14 @@ main .main-paginas {
     width: 768px; }
   main .main-paginas {
     width: 768px; }
+  .main-productos {
+    width: 768px; }
+    .main-productos section {
+      margin: 15px; }
+      .main-productos section div h5 {
+        padding: 5px; }
+    .main-productos .texto-productos {
+      display: none; }
   footer {
     height: 315px;
     grid-template-columns: 100px 1fr; }
@@ -514,6 +538,23 @@ main .main-paginas {
       height: 500px; }
     main .main-paginas .somos {
       text-align: center; }
+  .main-productos {
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto auto auto auto); }
+    .main-productos section {
+      margin: 15px; }
+      .main-productos section div {
+        border-radius: 10px; }
+        .main-productos section div h5 {
+          padding: 8px;
+          font-size: 20px; }
+        .main-productos section div p {
+          display: none; }
+        .main-productos section div button {
+          margin: 10px; }
+    .main-productos .texto-productos {
+      display: none; }
   footer {
     grid-template-columns: 100px 1fr; }
     footer .redes {

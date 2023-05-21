@@ -27,6 +27,20 @@
             width: 768px;
         }
     }
+.main-productos{
+    width:768px;
+    section{
+        margin:15px;
+            div{
+                h5{
+                    padding: 5px;
+                }
+            }
+        }
+    .texto-productos{
+         display: none;
+    }
+}
     footer{height:315px;
             grid-template-columns: 100px 1fr;
         .redes{
