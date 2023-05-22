@@ -1,46 +1,45 @@
 footer {
-        display: grid;
-        grid-template-columns: 300px 1fr 1fr;
-            div {
-                border: 1px solid none;
-                background-color: #a81822;
-                height: 430px;
-                width: 73px;
-                position: absolute;
-                left: 174px;
-                padding: 10px;
-                display: flex;
-                grid-column: 1;
-                flex-direction: column;
-                align-items: center;
-                justify-items: center;
-                flex-wrap: nowrap;
-            section {
-                    padding: 6px;
-                        a{
-                            font-size: 48px;
-                            color: black;
-                            padding: 15px;
-                        }
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    div {
+        border: 1px solid none;
+        background-color: #a81822;
+        height: 430px;
+        width: 73px;
+        position: absolute;
+        left: 174px;
+        padding: 10px;
+        display: flex;
+        grid-column: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        flex-wrap: nowrap;
+        section{
+            padding: 6px;
+            a{
+                font-size: 48px;
+                color: black;
+                padding: 15px;
             }
-                        .whatsapp{
-                                a:hover{ 
-                                    color: #63cb77;
-                                }
-                        }
-        
         }
+        .whatsapp{
+            a:hover{ 
+                color: #63cb77;
+            }
+        }
+    }
 
     .contactos {
-                grid-column: 2;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-end;
-                    p{
-                        font-size: 18px;
-                    }
-                }
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        p{
+            font-size: 18px;
+        }
+    }
 
     .texto-pie {
         font-size: 20px;
@@ -51,7 +50,7 @@ footer {
         justify-self: center;
         align-self: center;
         p{
-        font-size: 18px;
+            font-size: 18px;
         }
     }
 }

@@ -20,85 +20,84 @@
         }
     }
 
-.main-index{
-    height:auto;
-    width:100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 500px 500px 500px;
-    grid-template-columns:420px;
-    justify-content: center;
-    .titulo-card {
-        visibility: hidden;
-        display: none;
-    }
-    .texto-index {
-        visibility: hidden;
-        display: none;
-    }
-    .card-1 {
-        grid-row: 3;
-        grid-column: 1;
-        height: 400px;
-        width: 320px;
-        margin-top: 25px;
-    }
-    .card-2 {
-        grid-row: 4;
-        grid-column: 1;
-        height: 400px;
-        width: 320px;
-    }
-    .card-3 {
-        grid-row: 5;
-        grid-column: 1;
-        height: 400px;
-        width: 320px;
-    }
-}
-main{
-    .main-paginas{
-        width: auto;
-        .nosotros {
-            width:auto;
-            padding: 10px;
-            height: 500px;
-            }
-        .somos{
-            text-align: center;
-        }    
-    }
-}
-.main-productos{
-    width:auto;
-    grid-template-columns: 1fr;
-    grid-template-rows:repeat(auto auto auto auto);
-    section{
-        margin:15px;
-        div{
-            border-radius:10px;
-                h5{
-                padding: 8px;
-                font-size:20px;
-                }
-                p{
-                display: none;
-                }
-                button{
-                    margin: 10px;
-                }           
-            }
+    .main-index{
+        height:auto;
+        width:100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 500px 500px 500px;
+        grid-template-columns:420px;
+        justify-content: center;
+        .titulo-card {
+            visibility: hidden;
+            display: none;
         }
-    .texto-productos{
-     display: none;
+        .texto-index {
+            visibility: hidden;
+            display: none;
+        }
+        .card-1 {
+            grid-row: 3;
+            grid-column: 1;
+            height: 400px;
+            width: 320px;
+            margin-top: 25px;
+        }
+        .card-2 {
+            grid-row: 4;
+            grid-column: 1;
+            height: 400px;
+            width: 320px;
+        }
+        .card-3 {
+            grid-row: 5;
+            grid-column: 1;
+            height: 400px;
+            width: 320px;
+        }
     }
-}
-footer{
+    main{
+        .main-paginas{
+            width: auto;
+            .nosotros {
+                width:auto;
+                padding: 10px;
+                height: auto;
+            }
+            .somos{
+            text-align: center;
+            }    
+        }
+    }
+    .main-productos{
+        width:auto;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(auto auto auto auto);
+        section{
+            margin:15px;
+            div{
+                border-radius:10px;
+                    h5{
+                        padding: 8px;
+                        font-size:20px;
+                    }
+                    p{
+                        display: none;
+                    }
+                    button{
+                        margin: 10px;
+                    }           
+                }
+            }
+        .texto-productos{
+            display: none;
+        }
+    }
+    footer{
             grid-template-columns: 100px 1fr;
         .redes{
             grid-column:1;
             position: absolute;
             left: 0px;
-
         }
         .contactos {
             p{

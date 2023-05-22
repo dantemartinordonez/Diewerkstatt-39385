@@ -10,24 +10,29 @@
         grid-row: 1;
         grid-column: 1/4;
         display: flex;
-            p {
-                font-size: 20px;
-                font-family:$arial;
-                text-align: center;
-                color: #ffffff;
-                padding: 20px;
+        p {
+            background-color:#0000005f;
+            font-size: 20px;
+            font-family:$arial;
+            text-align: center;
+            color: #ededed;
+            padding: 40px;
+            strong{
+                color:#ffffff;
+                text-shadow: #000000 0 -1px;
             }
+        }
     }
     .titulo-card{
-    grid-row: 2;
-    grid-column: 1 / 4;
-    border: 1 solid none;
-    height: 100px;
-    background-color: #ffffff6b;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+        grid-row: 2;
+        grid-column: 1 / 4;
+        border: 1 solid none;
+        height: 100px;
+        background-color: #ffffff6b;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
     .card-1 {
         border: 1px solid none;
@@ -41,11 +46,9 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        
-        
         .texto-card1{
             border: 1px solid none;
-            background-color: #0000002a;
+            background-color: #0000005b;
             border-radius: 10px;
             color: #ffffff;
             text-align: center;
@@ -62,7 +65,6 @@
             @extend .texto-card1;
         }
     }
-    
     .card-3{
         @extend .card-1;
         grid-column: 3;
@@ -70,7 +72,5 @@
         .texto-card3{
             @extend .texto-card1;
         }
-
     }
-
 }

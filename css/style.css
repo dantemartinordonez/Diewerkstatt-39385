@@ -97,11 +97,15 @@ footer {
     grid-column: 1/4;
     display: flex; }
     .main-index section p {
+      background-color: #0000005f;
       font-size: 20px;
       font-family: Arial, Helvetica, sans-serif;
       text-align: center;
-      color: #ffffff;
-      padding: 20px; }
+      color: #ededed;
+      padding: 40px; }
+      .main-index section p strong {
+        color: #ffffff;
+        text-shadow: #000000 0 -1px; }
   .main-index .titulo-card {
     grid-row: 2;
     grid-column: 1 / 4;
@@ -126,7 +130,7 @@ footer {
     align-items: center; }
     .main-index .card-1 .texto-card1, .main-index .card-2 .texto-card1, .main-index .card-3 .texto-card1, .main-index .card-2 .texto-card2, .main-index .card-3 .texto-card3 {
       border: 1px solid none;
-      background-color: #0000002a;
+      background-color: #0000005b;
       border-radius: 10px;
       color: #ffffff;
       text-align: center; }
@@ -194,7 +198,8 @@ main .main-paginas {
     width: 300px;
     text-align: center;
     justify-self: center;
-    align-items: center; }
+    align-items: center;
+    margin: 10px; }
     .main-productos section img {
       padding: 10px;
       height: 200px;
@@ -535,7 +540,7 @@ main .main-paginas {
     main .main-paginas .nosotros {
       width: auto;
       padding: 10px;
-      height: 500px; }
+      height: auto; }
     main .main-paginas .somos {
       text-align: center; }
   .main-productos {

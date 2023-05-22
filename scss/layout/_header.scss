@@ -2,39 +2,37 @@ header {
     display: flex;
     height: 370px;
     justify-content: space-between;
-
     section {
         display: flex;
         height: 370px;
         padding-left: 30px;
     }
-
     nav {
         display: flex;
         flex-direction: column;
-            ul {
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            list-style: none;
+            padding: 30px 100px;
+            align-items: center;
+            li{
                 list-style: none;
-                padding: 30px 100px;
-                align-items: center;
-                li{
-                    list-style: none;
-                    gap: 30px;
-                            a {
-                                font-family:$arial;
-                                font-size: 25px;
-                                color: black;
-                                text-decoration: none;
-                                &:hover{
-                                    color: #a81822;
-                                    border: 1px solid none;
-                                    border-radius: 10px;
-                                    background-color: #ffffff46;
-                                }
-                            }
+                gap: 30px;
+                a {
+                    font-family:$arial;
+                    font-size: 25px;
+                    color: black;
+                    text-decoration: none;
+                    &:hover{
+                        color: #a81822;
+                        border: 1px solid none;
+                        border-radius: 10px;
+                        background-color: #ffffff46;
+                    }
                 }
             }
+        }
     }
 }

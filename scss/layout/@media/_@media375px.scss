@@ -13,17 +13,17 @@
         }
     }
 
-.main-index{
-    grid-template-columns:320px;
+    .main-index{
+        grid-template-columns:320px;
     }
     main{
         .main-paginas{
             .nosotros {
                 display: none;
                 } 
-                .somos {
+            .somos {
                     height:auto;
-                }
+            }
         }
     }
 }

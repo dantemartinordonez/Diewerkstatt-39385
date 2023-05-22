@@ -14,36 +14,36 @@ main{
             align-items: center;
             flex-direction: column;
             justify-content: flex-start;
-                h1{
-                    padding: 40px;
-                    text-shadow: #ffffff 0 -2px;
-                }
-                p{
-                    text-align: center;
-                }
-            } 
-            .somos {
-                display: flex;
-                border: 1px solid none;
-                background-color: #42414138;
-                font: 1.2em sans-serif;
-                flex-direction: column;
-                align-items: center;
-                height: 400px;
-                padding: 30px;
-                h3{
-                    padding: 30px
-                }
-                a{
-                    text-decoration: none;
-                    border: 1px solid none;
-                    background-color: #42414156;
-                    font: 1.2em sans-serif;
-                    color: #fcfcfc;
-                    margin: 10px;
-                    padding: 20px;
-                    text-shadow: #000000 0 -2px;
-                }
+            h1{
+                padding: 40px;
+                text-shadow: #ffffff 0 -2px;
             }
+            p{
+                text-align: center;
+            }
+        } 
+        .somos {
+            display: flex;
+            border: 1px solid none;
+            background-color: #42414138;
+            font: 1.2em sans-serif;
+            flex-direction: column;
+            align-items: center;
+            height: 400px;
+            padding: 30px;
+            h3{
+                padding: 30px
+            }
+            a{
+                text-decoration: none;
+                border: 1px solid none;
+                background-color: #42414156;
+                font: 1.2em sans-serif;
+                color: #fcfcfc;
+                margin: 10px;
+                padding: 20px;
+                text-shadow: #000000 0 -2px;
+            }
+        }
     }
 }
