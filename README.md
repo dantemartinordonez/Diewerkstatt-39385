@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DIE WERKSTATT
 ## Fabrica de ideas
 
@@ -11,3 +12,6 @@ TECNOLOGIAS USADAS EN EL PROYECTO:
 - HTML
 - CSS
 - SASS
+=======
+# diewerkstatt-39385
+>>>>>>> 79bd38361d525a6ed712b8fba45ed5c8e50ec7fd
