@@ -44,10 +44,12 @@
         }
     }
     .main-productos{
+        height: auto;
         width:auto;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows:repeat(auto,auto,1fr);
         section{
+            width: 350px;
             margin:15px;
             div{
                 border-radius:10px;
@@ -68,12 +70,13 @@
             grid-row:3;
         }
     }
-    footer{
-            grid-template-columns: 50px 300px 1fr;
+        footer{
+            grid-template-columns: 50px auto auto;
+            height: 350px;
         .redes{
             position: absolute;
             left: 0px;
-            height: 430px;
+            height: auto;
         }
         .contactos {
             grid-column: 2 / 3;
@@ -84,15 +87,13 @@
         }
         .texto-pie {
             grid-column: 3 / 4;
+            width: 400px;
             display: flex;
             font-size: 16px;
             padding-top: 50px;
-            width: 450px;
-            height: 400px;
+            height:auto;
             flex-direction: column;
-            p{
-                font-size: 16px;    
-            }
+            text-align: center;
         }
     }
 }
