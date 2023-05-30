@@ -1,8 +1,5 @@
 .main-presupuestos{
-    background-image: url(../assets/img/imagen-4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:auto;
+    @include fondo-paginas;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;

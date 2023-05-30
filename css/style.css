@@ -198,9 +198,9 @@ main .main-paginas {
 .main-productos {
   background-image: url(../assets/img/imagen-4.jpg);
   height: auto;
-  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(auto, 1fr); }
@@ -249,9 +249,9 @@ main .main-paginas {
 
 .main-presupuestos {
   background-image: url(../assets/img/imagen-4.jpg);
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -560,11 +560,12 @@ main .main-paginas {
   .texto-productos {
     display: none; }
   .main-presupuestos {
-    grid-template-rows: 1fr auto; }
+    grid-template-rows: 1fr auto;
+    width: 768px; }
     .main-presupuestos .presupuestos-2 {
-      height: 300px; }
+      height: 400px; }
     .main-presupuestos .presupuestos-3 {
-      height: 300px; }
+      height: 400px; }
   footer {
     height: 315px;
     grid-template-columns: 100px 1fr; }
@@ -677,12 +678,12 @@ main .main-paginas {
         width: 300px; }
   .main-presupuestos {
     width: auto;
-    grid-template-columns: 415px;
+    grid-template-columns: 410px;
     grid-template-rows: repeat(2, auto); }
     .main-presupuestos .presupuestos-1 {
       display: none; }
     .main-presupuestos .presupuestos-2 {
-      height: 250px;
+      height: 300px;
       grid-row: 1;
       font-size: 25px; }
       .main-presupuestos .presupuestos-2 a {
@@ -738,7 +739,19 @@ main .main-paginas {
         width: 300px;
         height: 50px; }
       .main-contactos .contactos-form button {
-        width: 300px; } }
+        width: 300px; }
+  .main-presupuestos {
+    width: auto;
+    grid-template-columns: 360px; }
+    .main-presupuestos .presupuestos-2 {
+      height: 250px;
+      font-size: 25px; }
+      .main-presupuestos .presupuestos-2 a {
+        font-size: 16px; }
+    .main-presupuestos .presupuestos-3 {
+      height: 250px; }
+    .main-presupuestos .redes-sociales a {
+      padding: 10px; } }
 
 @media (max-width: 320px) {
   header {
@@ -770,4 +783,20 @@ main .main-paginas {
         width: 270px;
         height: 50px; }
       .main-contactos .contactos-form button {
-        width: 270px; } }
+        width: 270px; }
+  .main-presupuestos {
+    width: auto;
+    grid-template-columns: 315px; }
+    .main-presupuestos .presupuestos-2 {
+      margin: 15px;
+      padding: 15px;
+      height: 250px;
+      font-size: 25px; }
+      .main-presupuestos .presupuestos-2 a {
+        font-size: 18px; }
+    .main-presupuestos .presupuestos-3 {
+      height: 300px;
+      margin: 15px;
+      padding: 15px; }
+    .main-presupuestos .redes-sociales a {
+      padding: 15px; } }

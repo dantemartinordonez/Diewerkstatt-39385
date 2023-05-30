@@ -1,8 +1,5 @@
 .main-contactos{
-    background-image: url(../assets/img/imagen-4.jpg);
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include fondo-paginas;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;

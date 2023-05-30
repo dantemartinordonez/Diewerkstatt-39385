@@ -1,9 +1,6 @@
 .main-productos{
-    background-image: url(../assets/img/imagen-4.jpg);
-    height:auto;
+    @include fondo-paginas;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows:repeat(auto,1fr);

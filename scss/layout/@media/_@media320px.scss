@@ -47,4 +47,29 @@
             button{width: 270px;}
         } 
     }
+    .main-presupuestos{
+        width: auto;
+        grid-template-columns:315px;
+        .presupuestos-2{
+            margin: 15px;
+            padding: 15px;
+            height: 250px;
+            font-size: 25px;
+            a{
+                font-size: 18px;
+
+            }
+        }
+        .presupuestos-3{
+            height: 300px;
+            margin: 15px;
+            padding: 15px;
+        }
+        .redes-sociales{
+            a{
+                padding:15px;
+
+            }
+        }
+    }
 }

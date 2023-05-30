@@ -1,9 +1,6 @@
 main{
     .main-paginas{
-        background-image: url(../assets/img/imagen-4.jpg);
-        height:auto;
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include fondo-paginas;
         .nosotros {
             border: 1px solid none;
             background-color: #ede9d571;

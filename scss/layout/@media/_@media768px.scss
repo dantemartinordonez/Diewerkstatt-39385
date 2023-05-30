@@ -62,12 +62,14 @@
         display: none;
     }
     .main-presupuestos{
+
         grid-template-rows: 1fr auto;
+        width:768px;
         .presupuestos-2{
-            height: 300px;
+            height: 400px;
         }
         .presupuestos-3{
-            height: 300px;
+            height: 400px;
         }
     }        
     footer{height:315px;
