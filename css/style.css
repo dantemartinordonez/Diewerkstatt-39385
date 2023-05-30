@@ -301,7 +301,6 @@ main .main-paginas {
     margin: 30px;
     background-color: #ffffff91; }
     .main-presupuestos .presupuestos-3 p {
-      font: 1.5em sans-serif;
       font-size: 25px; }
     .main-presupuestos .presupuestos-3 .redes-sociales a {
       font-size: 48px; }
@@ -560,6 +559,12 @@ main .main-paginas {
       grid-row: 2; }
   .texto-productos {
     display: none; }
+  .main-presupuestos {
+    grid-template-rows: 1fr auto; }
+    .main-presupuestos .presupuestos-2 {
+      height: 300px; }
+    .main-presupuestos .presupuestos-3 {
+      height: 300px; }
   footer {
     height: 315px;
     grid-template-columns: 100px 1fr; }
@@ -670,6 +675,26 @@ main .main-paginas {
           height: 50px; }
       .main-contactos .contactos-form button {
         width: 300px; }
+  .main-presupuestos {
+    width: auto;
+    grid-template-columns: 415px;
+    grid-template-rows: repeat(2, auto); }
+    .main-presupuestos .presupuestos-1 {
+      display: none; }
+    .main-presupuestos .presupuestos-2 {
+      height: 250px;
+      grid-row: 1;
+      font-size: 25px; }
+      .main-presupuestos .presupuestos-2 a {
+        font-size: 20px; }
+        .main-presupuestos .presupuestos-2 a i {
+          font-size: 48px; }
+    .main-presupuestos .presupuestos-3 {
+      height: 300px;
+      grid-column: 1;
+      grid-row: 2; }
+    .main-presupuestos .redes-sociales a {
+      padding: 20px; }
   footer {
     grid-template-columns: 100px 1fr; }
     footer .redes {

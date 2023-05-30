@@ -122,6 +122,35 @@
             button{width: 300px;}
         } 
     }
+    .main-presupuestos{
+        width: auto;
+        grid-template-columns:415px;
+        grid-template-rows:repeat(2,auto);
+        .presupuestos-1{
+            display: none;
+        }
+        .presupuestos-2{
+            height: 250px;
+            grid-row: 1;
+            font-size: 25px;
+            a{
+                font-size: 20px;
+                i{
+                    font-size: 48px;
+                }
+            }
+        }
+        .presupuestos-3{
+            height: 300px;
+            grid-column: 1;
+            grid-row:2;
+        }
+        .redes-sociales{
+            a{
+                padding:20px;
+            }
+        }
+    } 
     footer{
             grid-template-columns: 100px 1fr;
         .redes{

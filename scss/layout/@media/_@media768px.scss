@@ -39,7 +39,7 @@
             }
         }
     }
-    .main-contactos{
+        .main-contactos{
         width:768px;
         grid-template-rows:470px 1fr;
         display: flex;
@@ -58,10 +58,18 @@
             grid-row:2;
         } 
     }
-
     .texto-productos{
         display: none;
     }
+    .main-presupuestos{
+        grid-template-rows: 1fr auto;
+        .presupuestos-2{
+            height: 300px;
+        }
+        .presupuestos-3{
+            height: 300px;
+        }
+    }        
     footer{height:315px;
             grid-template-columns: 100px 1fr;
         .redes{
