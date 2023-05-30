@@ -28,7 +28,7 @@
         }
     }
     .main-productos{
-        width: 768px;
+        width:auto;
         section{
             width: 300px;
             margin:15px;
@@ -38,10 +38,30 @@
                 }
             }
         }
-    .texto-productos{
-         display: none;
     }
-}
+    .main-contactos{
+        width:768px;
+        grid-template-rows:470px 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .fondo-mapa{
+            display: none;
+        }
+        hr{
+            display: none;
+        }
+        .datos-contactos{
+            grid-row: 1;
+        }        
+        .contactos-form{
+            grid-row:2;
+        } 
+    }
+
+    .texto-productos{
+        display: none;
+    }
     footer{height:315px;
             grid-template-columns: 100px 1fr;
         .redes{

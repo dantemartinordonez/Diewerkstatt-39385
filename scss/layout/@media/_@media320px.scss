@@ -28,4 +28,23 @@
             }
         }
     }
+    .main-contactos{
+        width:auto;
+        .datos-contactos{
+            width: 280px;
+            height:500px;
+        }
+        .contactos-form{
+            width: 280px;
+            height: 630px;
+
+            p{
+                input{
+                    width: 270px;
+                    height: 50px;
+                }
+            }
+            button{width: 270px;}
+        } 
+    }
 }
