@@ -1,73 +1,75 @@
 @media(max-width:320px){
     header{
-        grid-template-rows: 190px 1fr;
+        grid-template-rows: 11.25rem 1fr;
         section{
             .logo-principal{
-                width: 300px;
-                height: 180px;
+                width: 18.125rem;
+                height:11.25rem;
             }
+        }
+        nav{
+            width: 20rem;
         }
     }
     .main-index{
-        width:auto;
-        grid-template-columns:320px;
+        width:20rem;
+        .card-1 {
+            width: 17.5rem;
+        }
     }
     main{
         .main-paginas{
+            width: 20rem;
+
             .somos {
-                padding:30px;
-                height:auto;
-                h3{
-                    font-size:18px;
-                    color: rgb(0, 0, 0);
-                }
-                a{
-                margin:15px;
-                padding: 10px;
-                }
+                    height:auto;
             }
         }
     }
     .main-contactos{
-        width:auto;
+        width:20rem;
         .datos-contactos{
-            width: 280px;
-            height:500px;
+            width: 17.5rem;
+            height:31.25rem;
         }
         .contactos-form{
-            width: 280px;
-            height: 630px;
+            width: 17.5rem;
+            height: 39.375rem;
 
             p{
                 input{
-                    width: 270px;
-                    height: 50px;
+                    width: 16.875rem;
+                    height: 3.125rem;
                 }
             }
-            button{width: 270px;}
+            button{width: 16.875rem;}
         } 
     }
+    .main-productos{
+        width: 20rem;
+    }
     .main-presupuestos{
-        width: auto;
-        grid-template-columns:315px;
+        width: 20rem;
         .presupuestos-2{
-            margin: 15px;
-            padding: 15px;
-            height: 250px;
-            font-size: 25px;
+            margin: .625rem;
+            padding: .625rem;
+            width:18.75rem;
+            height: 15.625rem;
+            font-size: 1.5625rem;
             a{
-                font-size: 18px;
+                font-size: 1.125rem;
 
             }
         }
         .presupuestos-3{
-            height: 300px;
-            margin: 15px;
-            padding: 15px;
+            height: 18.75rem;
+            width: 18.75rem;
+            margin: .625rem;
+            padding: .625rem;
         }
         .redes-sociales{
             a{
-                padding:15px;
+                padding:.9375rem;
 
             }
         }

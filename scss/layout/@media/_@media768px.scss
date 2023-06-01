@@ -1,18 +1,19 @@
 @media(max-width:768px){
     header{
-        height: 300px;
+        grid-template-rows: 18.75rem 3.75rem;
         section{
             .logo-principal{
-                height: 300px;
-                padding: 0px;
+                height: 18.75rem;
             }
         }
         nav{
+            width:48rem;
+            padding: 1.3125rem 0rem;
             .navbar{
-                padding: 15px;
                 li{
+                    align-items: center;
                     a{
-                        font-size: 18px;
+                        font-size: 1.125rem;
                     }
                 }
             }
@@ -20,28 +21,28 @@
     }
     .main-index{
         height: auto;
-        width: 768px;
+        width: 48rem;
     }
     main{
         .main-paginas{
-            width: 768px;
+            width: 48rem;
         }
     }
     .main-productos{
-        width:auto;
+        width:48rem;
         section{
-            width: 300px;
-            margin:15px;
+            width: 18.75rem;
+            margin:.9375rem;
             div{
                 h5{
-                    padding: 5px;
+                    padding: .3125rem;
                 }
             }
         }
     }
         .main-contactos{
-        width:768px;
-        grid-template-rows:470px 1fr;
+        width:48rem;
+        grid-template-rows: 29.375rem 1fr;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -55,7 +56,7 @@
             grid-row: 1;
         }        
         .contactos-form{
-            grid-row:2;
+            grid-row: 2;
         } 
     }
     .texto-productos{
@@ -64,20 +65,21 @@
     .main-presupuestos{
 
         grid-template-rows: 1fr auto;
-        width:768px;
+        width: 48rem;
         .presupuestos-2{
-            height: 400px;
+            height: 25rem;
         }
         .presupuestos-3{
-            height: 400px;
+            height: 25rem;
         }
     }        
-    footer{height:315px;
-            grid-template-columns: 100px 1fr;
+    footer{
+        height:19.6875rem;
+        grid-template-columns: 6.25rem 1fr;
         .redes{
             grid-column:1;
             a{
-                font-size: 40px;
+                font-size: 2.5rem;
             }
         }
         .contactos {
@@ -86,7 +88,7 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-end;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
         .texto-pie {
             display: none;

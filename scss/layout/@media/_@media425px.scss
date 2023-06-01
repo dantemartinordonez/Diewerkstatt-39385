@@ -1,20 +1,24 @@
 @media(max-width:430px){
     header{
-        height:auto;
         display: grid;
-        grid-template-columns:100%;
-        grid-template-rows: 250px 1fr;
+        grid-template-rows: 15rem 1fr;
+        width: auto;
         section{
             grid-row: 1;
-            padding-left: 5px;
+            padding:0rem;
+            justify-content: space-evenly;
             .logo-principal{
-                width: 370px;
-                height: 240px;
+                width: 23.125rem;
+                height: 15rem;
             }
         }
         nav{
+            border: none;
+            background-color:$colorfondo;
+            width: 26.875rem;
             grid-row: 2;
             .navbar{
+                flex-direction: column;
                 align-items: center;
             }
         }
@@ -22,69 +26,76 @@
 
     .main-index{
         height:auto;
-        width:100%;
+        width:26.875rem;
         display: grid;
-        grid-template-rows: 1fr 1fr 500px 500px 500px;
-        grid-template-columns:420px;
+        grid-template-rows: 1fr 1fr 31.25rem 31.25rem 31.25rem;
+        grid-template-columns:auto;
         justify-content: center;
         .titulo-card {
-            visibility: hidden;
             display: none;
         }
         .texto-index {
-            visibility: hidden;
             display: none;
         }
         .card-1 {
             grid-row: 3;
             grid-column: 1;
-            height: 400px;
-            width: 320px;
-            margin-top: 25px;
+            height: 25rem;
+            width: 20rem;
+            margin-top: 1.5625rem;
         }
         .card-2 {
             grid-row: 4;
             grid-column: 1;
-            height: 400px;
-            width: 320px;
+            height: 25rem;
+            width: 20rem;
         }
         .card-3 {
             grid-row: 5;
             grid-column: 1;
-            height: 400px;
-            width: 320px;
+            height: 25rem;
+            width: 20rem;
         }
     }
     main{
         .main-paginas{
-            width: auto;
+            width: 26.875rem;
             .nosotros {
-                width:auto;
-                padding: 10px;
+                width: 26.875rem;
+                padding: .625rem;
                 height: auto;
             }
             .somos{
             text-align: center;
+                h3{
+                    padding: .3125rem;
+                    font-size: 1.125rem;
+                    color: #000000;
+                }
+                a{
+                    margin: 0rem;
+                    padding: .625rem;
+                }
             }    
         }
     }
     .main-productos{
-        width:auto;
-        grid-template-columns: 1fr;
-        grid-template-rows:repeat(auto auto auto auto);
+        width: 26.875rem;
+        grid-template-columns: auto;
+        grid-template-rows:repeat(4 , auto);
         section{
-            margin:15px;
+            margin: .9375rem;
             div{
-                border-radius:10px;
+                border-radius: .625rem;
                     h5{
-                        padding: 8px;
-                        font-size:20px;
+                        padding: .5rem;
+                        font-size: 1.25rem;
                     }
                     p{
                         display: none;
                     }
                     button{
-                        margin: 10px;
+                        margin: .625rem;
                     }           
                 }
             }
@@ -93,74 +104,76 @@
         }
     }
     .main-contactos{
-        width:auto;
+        width: 26.875rem;
         grid-template-rows:auto 1fr;
         .datos-contactos{
             grid-row: 1;
-            width: 370px;
-            height:500px;
+            width: 23.125rem;
+            height: 31.25rem;
             font: 1.0em sans-serif;
             .direccion{
                 p{
-                    font-size: 16px;
+                    font-size: 1rem;
                 }
             }
         }
         .contactos-form{
             grid-row:2;
-            width: 370px;
-            height: 630px;
-            padding-left:0px;
+            width: 23.125rem;
+            height: 39.375rem;
+            padding-left: 0rem;
             font: 1.0em sans-serif;
             p{
-                font-size: 16px;
+                font-size: 1rem;
                 input{
-                    width: 300px;
-                    height: 50px;
+                    width: 18.75rem;
+                    height: 3.125rem;
                 }
             }
-            button{width: 300px;}
+            button{
+                width: 18.75rem;
+            }
         } 
     }
     .main-presupuestos{
-        width: auto;
-        grid-template-columns:410px;
-        grid-template-rows:repeat(2,auto);
+        width: 26.875rem;
+        grid-template-columns:auto;
+        grid-template-rows:repeat(2 , auto);
         .presupuestos-1{
             display: none;
         }
         .presupuestos-2{
-            height: 300px;
+            height: 18.75rem;
             grid-row: 1;
-            font-size: 25px;
+            font-size: 1.5625rem;
             a{
-                font-size: 20px;
+                font-size: 1.25rem;
                 i{
                     font-size: 48px;
                 }
             }
         }
         .presupuestos-3{
-            height: 300px;
+            height: 18.75rem;
             grid-column: 1;
             grid-row:2;
         }
         .redes-sociales{
             a{
-                padding:20px;
+                padding: 1.25rem;
             }
         }
     } 
     footer{
-            grid-template-columns: 100px 1fr;
+            grid-template-columns: 6.25rem 1fr;
         .redes{
             grid-column:1;
             position: absolute;
-            left: 0px;
+            left: 0rem;
         }
         .contactos {
             p{
-                font-size: 16px;
+                font-size: 1rem;
             }
         }
         .texto-pie {
