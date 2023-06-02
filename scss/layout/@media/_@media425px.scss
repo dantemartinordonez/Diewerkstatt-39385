@@ -65,6 +65,13 @@
                 padding: .625rem;
                 height: auto;
             }
+            .video{
+                video{
+                    display: block;
+                    width: 18.75rem;
+                    margin: auto;
+                }
+            }
             .somos{
             text-align: center;
                 h3{
@@ -150,6 +157,7 @@
                 font-size: 1.25rem;
                 i{
                     font-size: 48px;
+                    padding-bottom: 10px;
                 }
             }
         }

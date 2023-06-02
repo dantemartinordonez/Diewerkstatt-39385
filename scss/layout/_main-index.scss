@@ -1,9 +1,9 @@
 .main-index{
     background-image: url(../assets/img/3.jpg);
-    height: 800px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px 150px 450px;
+    grid-template-rows: 12.5rem 9.375rem 28.125rem;
     background-size: cover;
     background-repeat: no-repeat;
     section{
@@ -12,11 +12,11 @@
         display: flex;
         p {
             background-color:#0000005f;
-            font-size: 20px;
+            font-size: 1.25rem;
             font-family:$arial;
             text-align: center;
             color: #ededed;
-            padding: 40px;
+            padding: 2.5rem;
             strong{
                 color:#ffffff;
                 text-shadow: #000000 0 -1px;
@@ -27,7 +27,7 @@
         grid-row: 2;
         grid-column: 1 / 4;
         border: 1 solid none;
-        height: 100px;
+        height: 6.25rem;
         background-color: #ffffff6b;
         display: flex;
         flex-direction: row;
@@ -39,8 +39,8 @@
         background-color: #0000002a;
         grid-column: 1;
         grid-row: 3;
-        height: 400px;
-        width: 300px;
+        height: 25rem;
+        width: 18.75rem;
         display: flex;
         justify-self: center;
         flex-direction: column;
@@ -51,9 +51,9 @@
             transform: scale(1.2);
         }
         .texto-card1{
-            border: 1px solid none;
+            border: .0625rem solid none;
             background-color: #0000005b;
-            border-radius: 10px;
+            border-radius: .625rem;
             color: #ffffff;
             text-align: center;
             p{

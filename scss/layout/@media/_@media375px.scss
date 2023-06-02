@@ -25,12 +25,26 @@
     }
     main{
         .main-paginas{
+            padding: .3125rem;
             width: auto;
             .nosotros {
-                display: none;
+                justify-content:center;
+                border: .0625rem solid black;
+                width: auto;
+                height: auto;
+                margin:.3125rem;
+                h1{
+                    font: 1.1em sans-serif;
+                    padding: 1.25rem;
+                    text-align: center;
+                }
+                p{
+                    font-size: 1.125rem;
+                }
             } 
             .somos{
                 text-align: center;
+                margin: .3125rem;
                 h3{
                     padding: .3125rem;
                     margin: .9375rem;
@@ -77,8 +91,7 @@
             font-size: 1.5625rem;
             margin: .625rem;
             a{
-                font-size: 1rem;
-
+                font-size: 1.25rem;
             }
         }
         .presupuestos-3{
