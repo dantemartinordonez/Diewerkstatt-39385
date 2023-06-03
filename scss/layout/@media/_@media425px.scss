@@ -144,7 +144,7 @@
     }
     .main-presupuestos{
         width: 26.875rem;
-        grid-template-columns:auto;
+        grid-template-columns:100%;
         grid-template-rows:repeat(2 , auto);
         .presupuestos-1{
             display: none;
@@ -154,10 +154,10 @@
             grid-row: 1;
             font-size: 1.5625rem;
             a{
-                font-size: 1.25rem;
+                font-size: 1.375rem;
                 i{
-                    font-size: 48px;
-                    padding-bottom: 10px;
+                    font-size: 3rem;
+                    padding-bottom: .625rem;
                 }
             }
         }

@@ -709,7 +709,7 @@ main .main-paginas {
         width: 18.75rem; }
   .main-presupuestos {
     width: 26.875rem;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto); }
     .main-presupuestos .presupuestos-1 {
       display: none; }
@@ -718,10 +718,10 @@ main .main-paginas {
       grid-row: 1;
       font-size: 1.5625rem; }
       .main-presupuestos .presupuestos-2 a {
-        font-size: 1.25rem; }
+        font-size: 1.375rem; }
         .main-presupuestos .presupuestos-2 a i {
-          font-size: 48px;
-          padding-bottom: 10px; }
+          font-size: 3rem;
+          padding-bottom: .625rem; }
     .main-presupuestos .presupuestos-3 {
       height: 18.75rem;
       grid-column: 1;
@@ -804,7 +804,7 @@ main .main-paginas {
       font-size: 1.5625rem;
       margin: .625rem; }
       .main-presupuestos .presupuestos-2 a {
-        font-size: 1.25rem; }
+        font-size: 18px; }
     .main-presupuestos .presupuestos-3 {
       height: 16.25rem;
       margin: .625rem; }
@@ -855,7 +855,6 @@ main .main-paginas {
     .main-presupuestos .presupuestos-3 {
       height: 18.75rem;
       width: 18.75rem;
-      margin: .625rem;
       padding: .625rem; }
     .main-presupuestos .redes-sociales a {
       padding: .9375rem; } }
