@@ -82,7 +82,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    gap: 1.25rem; }
     footer .contactos p {
       font-size: 1.25rem; }
   footer .texto-pie {
@@ -225,24 +226,24 @@ main .main-paginas {
       transition: transform .2s; }
       .main-productos section img:hover {
         transform: scale(1.2); }
-    .main-productos section div {
+    .main-productos section section {
       border: .0625rem black none;
       border-radius: .9375rem;
       background-color: #ede9d5; }
-      .main-productos section div h5 {
+      .main-productos section section h5 {
         padding: .625rem;
         font-size: 1.25rem; }
-      .main-productos section div p {
+      .main-productos section section p {
         font-family: 1rem; }
-      .main-productos section div button {
+      .main-productos section section button {
         border-radius: .4375rem;
         margin: .9375rem;
         padding: .625rem; }
-        .main-productos section div button a {
+        .main-productos section section button a {
           font-size: 1.125rem;
           color: black;
           text-decoration: none; }
-          .main-productos section div button a:hover {
+          .main-productos section section button a:hover {
             color: #a81822; }
   .main-productos .texto-productos {
     grid-column: 1/5;
@@ -455,7 +456,7 @@ main .main-paginas {
     grid-template-rows: repeat(auto, auto, 1fr); }
     .main-productos section {
       width: 21.875rem;
-      margin: .9375rem; }
+      margin-bottom: 15px; }
       .main-productos section div {
         border-radius: .625rem; }
         .main-productos section div h5 {
@@ -537,26 +538,74 @@ main .main-paginas {
 
 @media (max-width: 768px) {
   header {
-    grid-template-rows: 18.75rem 3.75rem; }
-    header section .logo-principal {
-      height: 18.75rem; }
+    display: grid;
+    grid-template-rows: 15rem 1fr;
+    width: auto; }
+    header section {
+      grid-row: 1;
+      padding: 0rem;
+      justify-content: space-evenly; }
+      header section .logo-principal {
+        width: 21.875rem;
+        height: 15rem; }
     header nav {
-      width: 48rem;
-      padding: 1.3125rem 0rem; }
-      header nav .navbar li {
+      border: none;
+      background-color: #ede9d5;
+      grid-row: 2; }
+      header nav .navbar {
+        flex-direction: column;
         align-items: center; }
-        header nav .navbar li a {
-          font-size: 1.125rem; }
   .main-index {
     height: auto;
-    width: 48rem; }
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 31.25rem 31.25rem 31.25rem;
+    grid-template-columns: auto;
+    justify-content: center; }
+    .main-index .titulo-card {
+      display: none; }
+    .main-index .texto-index {
+      display: none; }
+    .main-index .card-1, .main-index .card-2, .main-index .card-3 {
+      grid-row: 3;
+      grid-column: 1;
+      height: 25rem;
+      width: 20rem;
+      margin-top: 1.5625rem; }
+    .main-index .card-2 {
+      grid-row: 4;
+      grid-column: 1;
+      height: 25rem;
+      width: 20rem; }
+    .main-index .card-3 {
+      grid-row: 5;
+      grid-column: 1;
+      height: 25rem;
+      width: 20rem; }
   main .main-paginas {
-    width: 48rem; }
+    width: auto; }
+    main .main-paginas .nosotros {
+      width: auto;
+      padding: .625rem;
+      height: auto; }
+    main .main-paginas .video video {
+      display: block;
+      width: 18.75rem;
+      margin: auto; }
+    main .main-paginas .somos {
+      text-align: center; }
+      main .main-paginas .somos h3 {
+        padding: .3125rem;
+        font-size: 1.125rem;
+        color: #000000; }
+      main .main-paginas .somos a {
+        margin: 0rem;
+        padding: .625rem; }
   .main-productos {
-    width: 48rem; }
+    width: auto; }
     .main-productos section {
       width: 18.75rem;
-      margin: .9375rem; }
+      margin: auto; }
       .main-productos section div h5 {
         padding: .3125rem; }
   .main-contactos {
@@ -601,17 +650,17 @@ main .main-paginas {
     footer .texto-pie {
       display: none; } }
 
-@media (max-width: 430px) {
+@media (max-width: 425px) {
   header {
     display: grid;
     grid-template-rows: 15rem 1fr;
     width: auto; }
     header section {
       grid-row: 1;
-      padding: 0rem;
+      padding: auto;
       justify-content: space-evenly; }
       header section .logo-principal {
-        width: 23.125rem;
+        width: 21.875rem;
         height: 15rem; }
     header nav {
       border: none;
@@ -623,7 +672,7 @@ main .main-paginas {
         align-items: center; }
   .main-index {
     height: auto;
-    width: 26.875rem;
+    width: 425px;
     display: grid;
     grid-template-rows: 1fr 1fr 31.25rem 31.25rem 31.25rem;
     grid-template-columns: auto;
@@ -649,9 +698,9 @@ main .main-paginas {
       height: 25rem;
       width: 20rem; }
   main .main-paginas {
-    width: 26.875rem; }
+    width: 425px; }
     main .main-paginas .nosotros {
-      width: 26.875rem;
+      width: 425px;
       padding: .625rem;
       height: auto; }
     main .main-paginas .video video {
@@ -668,24 +717,22 @@ main .main-paginas {
         margin: 0rem;
         padding: .625rem; }
   .main-productos {
-    width: 26.875rem;
+    width: auto;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto); }
-    .main-productos section {
-      margin: .9375rem; }
-      .main-productos section div {
-        border-radius: .625rem; }
-        .main-productos section div h5 {
-          padding: .5rem;
-          font-size: 1.25rem; }
-        .main-productos section div p {
-          display: none; }
-        .main-productos section div button {
-          margin: .625rem; }
+    .main-productos section div {
+      border-radius: .625rem; }
+      .main-productos section div h5 {
+        padding: .5rem;
+        font-size: 1.25rem; }
+      .main-productos section div p {
+        display: none; }
+      .main-productos section div button {
+        margin: .625rem; }
     .main-productos .texto-productos {
       display: none; }
   .main-contactos {
-    width: 26.875rem;
+    width: 425px;
     grid-template-rows: auto 1fr; }
     .main-contactos .datos-contactos {
       grid-row: 1;
@@ -708,7 +755,7 @@ main .main-paginas {
       .main-contactos .contactos-form button {
         width: 18.75rem; }
   .main-presupuestos {
-    width: 26.875rem;
+    width: 425px;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto); }
     .main-presupuestos .presupuestos-1 {
@@ -741,17 +788,17 @@ main .main-paginas {
 
 @media (max-width: 375px) {
   header {
-    grid-template-rows: 11.875rem 1fr;
+    grid-template-rows: 11.125rem 1fr;
     width: auto; }
     header section .logo-principal {
-      width: 19.375rem;
-      height: 11.875rem; }
+      width: 18.125rem;
+      height: 11.25rem; }
     header nav {
       width: auto; }
   .main-index {
     width: auto; }
     .main-index .card-1, .main-index .card-2, .main-index .card-3 {
-      width: 18.75rem; }
+      width: 17.5rem; }
       .main-index .card-1 .texto-card1 p, .main-index .card-2 .texto-card1 p, .main-index .card-3 .texto-card1 p, .main-index .card-2 .texto-card2 p, .main-index .card-3 .texto-card3 p {
         font-size: 1rem; }
   main .main-paginas {
@@ -779,7 +826,7 @@ main .main-paginas {
         margin: .9375rem;
         padding: .625rem; }
   .main-productos {
-    width: auto;
+    width: 375px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto); }
     .main-productos section {
@@ -804,7 +851,7 @@ main .main-paginas {
       font-size: 1.5625rem;
       margin: .625rem; }
       .main-presupuestos .presupuestos-2 a {
-        font-size: 18px; }
+        font-size: 1.125rem; }
     .main-presupuestos .presupuestos-3 {
       height: 16.25rem;
       margin: .625rem; }
@@ -813,22 +860,26 @@ main .main-paginas {
 
 @media (max-width: 320px) {
   header {
-    grid-template-rows: 11.25rem 1fr; }
+    grid-template-rows: 170px 1fr; }
     header section .logo-principal {
-      width: 18.125rem;
-      height: 11.25rem; }
+      width: 260px;
+      height: 170px; }
     header nav {
-      width: 20rem; }
+      width: auto; }
   .main-index {
-    width: 20rem; }
+    width: auto; }
     .main-index .card-1, .main-index .card-2, .main-index .card-3 {
+      padding: auto;
       width: 17.5rem; }
-  main .main-paginas {
-    width: 20rem; }
-    main .main-paginas .somos {
-      height: auto; }
+  main .main-paginas .nosotros {
+    width: auto;
+    margin: auto; }
+  main .main-paginas .video video {
+    width: 280px; }
+  main .main-paginas .somos {
+    height: auto; }
   .main-contactos {
-    width: 20rem; }
+    width: auto; }
     .main-contactos .datos-contactos {
       width: 17.5rem;
       height: 31.25rem; }
@@ -841,20 +892,31 @@ main .main-paginas {
       .main-contactos .contactos-form button {
         width: 16.875rem; }
   .main-productos {
-    width: 20rem; }
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto); }
+    .main-productos section {
+      width: 18.75rem; }
+    .main-productos div {
+      border-radius: .625rem; }
+      .main-productos div h5 {
+        padding: auto;
+        font-size: 1.25rem; }
+      .main-productos div p {
+        display: none; }
+      .main-productos div button {
+        margin: .625rem; }
   .main-presupuestos {
     width: 20rem; }
     .main-presupuestos .presupuestos-2 {
-      margin: .625rem;
-      padding: .625rem;
-      width: 18.75rem;
+      width: auto;
       height: 15.625rem;
       font-size: 1.5625rem; }
       .main-presupuestos .presupuestos-2 a {
-        font-size: 1.125rem; }
+        font-size: 16px; }
     .main-presupuestos .presupuestos-3 {
       height: 18.75rem;
-      width: 18.75rem;
+      width: auto;
       padding: .625rem; }
     .main-presupuestos .redes-sociales a {
       padding: .9375rem; } }

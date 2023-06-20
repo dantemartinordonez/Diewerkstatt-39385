@@ -1,38 +1,94 @@
 @media(max-width:768px){
     header{
-        grid-template-rows: 18.75rem 3.75rem;
+        display: grid;
+        grid-template-rows: 15rem 1fr;
+        width: auto;
         section{
+            grid-row: 1;
+            padding:0rem;
+            justify-content: space-evenly;
             .logo-principal{
-                height: 18.75rem;
+                width: 21.875rem;
+                height: 15rem;
             }
         }
         nav{
-            width:48rem;
-            padding: 1.3125rem 0rem;
+            border: none;
+            background-color:$colorfondo;
+            grid-row: 2;
             .navbar{
-                li{
-                    align-items: center;
-                    a{
-                        font-size: 1.125rem;
-                    }
-                }
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
     .main-index{
-        height: auto;
-        width: 48rem;
+        height:auto;
+        width:auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr 31.25rem 31.25rem 31.25rem;
+        grid-template-columns:auto;
+        justify-content: center;
+        .titulo-card {
+            display: none;
+        }
+        .texto-index {
+            display: none;
+        }
+        .card-1 {
+            grid-row: 3;
+            grid-column: 1;
+            height: 25rem;
+            width: 20rem;
+            margin-top: 1.5625rem;
+        }
+        .card-2 {
+            grid-row: 4;
+            grid-column: 1;
+            height: 25rem;
+            width: 20rem;
+        }
+        .card-3 {
+            grid-row: 5;
+            grid-column: 1;
+            height: 25rem;
+            width: 20rem;
+        }
     }
     main{
         .main-paginas{
-            width: 48rem;
+            width: auto;
+            .nosotros {
+                width:auto;
+                padding: .625rem;
+                height: auto;
+            }
+            .video{
+                video{
+                    display: block;
+                    width: 18.75rem;
+                    margin: auto;
+                }
+            }
+            .somos{
+            text-align: center;
+                h3{
+                    padding: .3125rem;
+                    font-size: 1.125rem;
+                    color: #000000;
+                }
+                a{
+                    margin: 0rem;
+                    padding: .625rem;
+                }
+            }    
         }
     }
     .main-productos{
-        width:48rem;
+        width:auto;
         section{
             width: 18.75rem;
-            margin:.9375rem;
+            margin:auto;
             div{
                 h5{
                     padding: .3125rem;

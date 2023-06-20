@@ -1,32 +1,41 @@
 @media(max-width:320px){
     header{
-        grid-template-rows: 11.25rem 1fr;
+        grid-template-rows: 170px 1fr;
         section{
             .logo-principal{
-                width: 18.125rem;
-                height:11.25rem;
+                width: 260px;
+                height:170px;
             }
         }
         nav{
-            width: 20rem;
+            width:auto;
         }
     }
     .main-index{
-        width:20rem;
+        width:auto;
         .card-1 {
+            padding: auto;
             width: 17.5rem;
         }
     }
     main{
         .main-paginas{
-            width: 20rem;
+            .nosotros{
+                width: auto;
+                margin: auto;
+            }
+            .video{
+                video{
+                    width: 280px;
+                }
+            }
             .somos {
                     height:auto;
             }  
         }
     }
     .main-contactos{
-        width:20rem;
+        width: auto;
         .datos-contactos{
             width: 17.5rem;
             height:31.25rem;
@@ -45,23 +54,39 @@
         } 
     }
     .main-productos{
-        width: 20rem;
+        width:auto;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(4,auto);
+        section{
+                width: 18.75rem;  
+        }
+        div{
+            border-radius: .625rem;
+                h5{
+                    padding:auto;
+                    font-size: 1.25rem;
+                }
+                p{
+                    display: none;
+                }
+                button{
+                    margin: .625rem;
+                }           
+            }
     }
     .main-presupuestos{
         width: 20rem;
         .presupuestos-2{
-            margin: .625rem;
-            padding: .625rem;
-            width:18.75rem;
+            width:auto;
             height: 15.625rem;
             font-size: 1.5625rem;
             a{
-                font-size: 1.125rem;
+                font-size: 16px;
             }
         }
         .presupuestos-3{
             height: 18.75rem;
-            width: 18.75rem;
+            width: auto;
             padding: .625rem;
         }
         .redes-sociales{

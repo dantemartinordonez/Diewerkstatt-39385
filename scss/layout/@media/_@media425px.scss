@@ -1,14 +1,14 @@
-@media(max-width:430px){
+@media(max-width:425px){
     header{
         display: grid;
         grid-template-rows: 15rem 1fr;
         width: auto;
         section{
             grid-row: 1;
-            padding:0rem;
+            padding:auto;
             justify-content: space-evenly;
             .logo-principal{
-                width: 23.125rem;
+                width: 21.875rem;
                 height: 15rem;
             }
         }
@@ -26,7 +26,7 @@
 
     .main-index{
         height:auto;
-        width:26.875rem;
+        width: 425px;
         display: grid;
         grid-template-rows: 1fr 1fr 31.25rem 31.25rem 31.25rem;
         grid-template-columns:auto;
@@ -59,9 +59,9 @@
     }
     main{
         .main-paginas{
-            width: 26.875rem;
+            width: 425px;
             .nosotros {
-                width: 26.875rem;
+                width: 425px;
                 padding: .625rem;
                 height: auto;
             }
@@ -87,11 +87,10 @@
         }
     }
     .main-productos{
-        width: 26.875rem;
+        width: auto;
         grid-template-columns: auto;
         grid-template-rows:repeat(4 , auto);
         section{
-            margin: .9375rem;
             div{
                 border-radius: .625rem;
                     h5{
@@ -111,7 +110,7 @@
         }
     }
     .main-contactos{
-        width: 26.875rem;
+        width: 425px;
         grid-template-rows:auto 1fr;
         .datos-contactos{
             grid-row: 1;
@@ -143,7 +142,7 @@
         } 
     }
     .main-presupuestos{
-        width: 26.875rem;
+        width: 425px;
         grid-template-columns:100%;
         grid-template-rows:repeat(2 , auto);
         .presupuestos-1{

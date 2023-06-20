@@ -1,11 +1,11 @@
 @media(max-width:375px){
     header{
-        grid-template-rows: 11.875rem 1fr;
+        grid-template-rows: 11.125rem 1fr;
         width: auto;
         section{
             .logo-principal{
-                width: 19.375rem;
-                height: 11.875rem;
+                width: 18.125rem;
+                height:11.25rem;
             }
         }
         nav{
@@ -15,7 +15,7 @@
     .main-index{
         width:auto;
         .card-1 {
-            width: 18.75rem;
+            width: 17.5rem;
             .texto-card1{
                 p{
                     font-size: 1rem;
@@ -57,7 +57,7 @@
         }
     }
     .main-productos{
-        width:auto;
+        width:375px;
         grid-template-columns: 1fr;
         grid-template-rows:repeat(4,auto);
         section{
@@ -91,7 +91,7 @@
             font-size: 1.5625rem;
             margin: .625rem;
             a{
-                font-size: 18px;
+                font-size: 1.125rem;
             }
         }
         .presupuestos-3{
